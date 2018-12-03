@@ -17,6 +17,11 @@ All the answers for questions asked in this lab instructions must be filled in *
 
 This lab must be completed individually.
 
+
+##Answers 
+Lastname=TIMSILINE
+Firstname=Nazim
+
 ## 1: Git
 
 ### 1.0: Create a Github account
@@ -31,7 +36,7 @@ To get more help about fork, see the [official documentation](https://guides.git
 Clone your newly forked project on your computer
 
 ### 1.3: Faire un commit 
-test commit
+
 After the clone, you should have your copy of the project on your computer. Go into cloned folder and add your firstname and lastname to it.
 
 Commit and push your changes. You should see your change on Github graphical interface.
