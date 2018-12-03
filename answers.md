@@ -4,11 +4,11 @@ Lastname:Guillot
 Firstname:Augustin
 
 ## 2.2
-command:
+command: Docker run build
 
 ## 2.3
 question:
-command:
+command:docker run -p 3000:3000 build
 
 ## 2.5
 question:
