@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname:suguna
+Firstname:agetha
 
 ## 2.2
 command:
