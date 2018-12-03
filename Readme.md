@@ -170,3 +170,16 @@ Use all knowledge you acquirred today to dockerise mysql database using official
 
 After this step, add mysql as another service to your docker-compose.yml file.
 
+#### Answer:
+```docker-compose.yml
+version: '3.1'
+services:
+  db:
+    image: app-mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: project
+```
+
