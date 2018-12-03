@@ -2,4 +2,4 @@ FROM node:alpine
 
 COPY index.js /root/
 
-CMD ["node","index.js"]
+CMD ["node","/root/index.js"]
