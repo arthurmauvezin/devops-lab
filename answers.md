@@ -4,10 +4,10 @@ Lastname: Schmitt
 Firstname: Camille
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
-question:
+question: 
 command:
 
 ## 2.5
