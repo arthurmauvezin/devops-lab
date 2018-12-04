@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: Zaafouri
+Firstname: Rim
 
 ## 2.2
 command:
