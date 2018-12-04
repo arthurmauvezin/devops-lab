@@ -4,11 +4,11 @@ Lastname: Guillermou
 Firstname: Tom
 
 ## 2.2
-command:
+command:$ docker build -t devops-lab .
 
 ## 2.3
-question:
-command:
+question: If we do not set the right port for the Docker image, then we have 2 differents access ports: one for the Node app and one for the Docker container.
+command: EXPOSE 3000
 
 ## 2.5
 question:
