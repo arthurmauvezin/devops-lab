@@ -4,7 +4,7 @@ Lastname:Bosseray
 Firstname:Alexis
 
 ## 2.2
-command:tata
+command:
 
 ## 2.3
 question:
