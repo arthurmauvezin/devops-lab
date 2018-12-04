@@ -5,6 +5,7 @@ Firstname: Clément
 
 ## 2.2
 command:
+sudo docker run node /Users/clementdebailliencourt/Documents/Node\ Project/index.js
 
 ## 2.3
 question:
