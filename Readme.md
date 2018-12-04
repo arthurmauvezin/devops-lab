@@ -175,7 +175,7 @@ After this step, add mysql as another service to your docker-compose.yml file.
 version: '3.1'
 services:
   db:
-    image: arthurmauvezin/docker-labs-mysql:1.0
+    image: arthurmauvezin/docker-labs-mysql:latest
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
