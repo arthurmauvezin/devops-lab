@@ -31,7 +31,7 @@ To get more help about fork, see the [official documentation](https://guides.git
 Clone your newly forked project on your computer
 
 ### 1.3: Faire un commit 
-After the clone, you should have your copy of the project on your computer. Go into cloned folder and add your firstname and lastname to it.
+After the clone, you should have your copy of the project on your computer. Go into cloned folder and add your firstname and lastname to it. 
 
 Commit and push your changes. You should see your change on Github graphical interface.
 
