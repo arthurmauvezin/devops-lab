@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: Magdaleno Morales
+Firstname: Esmeralda
 
 ## 2.2
 command:
