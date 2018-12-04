@@ -1,4 +1,6 @@
-FROM library/node
-RUN npm install <node>
+FROM node
 
-CMD echo "OK"
+RUN npm install express
+RUN npm install mysql
+ADD project.js /devops-lab/
+CMD node devops-lab/project.j
