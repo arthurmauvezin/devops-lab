@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: Zamith
+Firstname: Benjamin
 
 ## 2.2
 command:
