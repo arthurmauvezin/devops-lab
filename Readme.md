@@ -1,3 +1,5 @@
+Baptiste Grobon
+
 # Lab : Introduction Devops
 This lab goal is to introduce DevOps concept (Git, Gitflow, Docker,...) seen in [corresponding course](https://github.com/arthurmauvezin/devops-course). It is adapted to fit ece courses.
 
