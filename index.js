@@ -104,9 +104,9 @@ app.get('/food-stats', function(req, res) {
  * Starting app
  */
 app.listen(3000, function() {
-    database.connection.connect(function(error) {
-        if(error) throw error;
-        console.info('Info: Connected to the database')
-    });
+    // database.connection.connect(function(error) {
+    //     if(error) throw error;
+    //     console.info('Info: Connected to the database')
+    // });
     console.info('Info: App started');
 });
