@@ -1,7 +1,7 @@
 # Answers
 
-Lastname: Ngo
-Firstname: John
+Lastname:Ngo
+Firstname:John
 
 ## 2.2
 command:
