@@ -1,7 +1,6 @@
 # Answers
 
-Lastname:
-Firstname:
+YU:Daniel:
 
 ## 2.2
 command:
