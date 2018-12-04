@@ -1,6 +1,6 @@
 # Answers
 
-Lastname: THERY
+Lastname: Thery
 Firstname: Antoine
 
 ## 2.2
