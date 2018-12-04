@@ -1365,12 +1365,12 @@ app.get('/food/:id/animals/:id_animal', function (req, res) {
 }); 
 
 app.listen(3000, function () {
-
+/*
     db.connect(function (err) {
         if (err) throw err;
         console.log('Connection to database successful!');
     });
-
+*/
     //Callback function is called after the application is succesfully started
     console.log('Example app listening on port 3000');
 
