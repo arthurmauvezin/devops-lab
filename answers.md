@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: TEIGER 	
+Firstname: Max
 
 ## 2.2
 command:
