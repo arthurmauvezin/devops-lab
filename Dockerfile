@@ -1,7 +1,9 @@
 FROM node
-COPY express.js /root
+WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install express
-CMD npm start
+COPY . .
+CMD [ "npm", "start" ]
+
 
 
