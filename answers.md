@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: Sabry
+Firstname: LALEG
 
 ## 2.2
 command:
