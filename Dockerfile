@@ -1,2 +1,4 @@
 FROM node:lts-alpine
-CMD node index2.js
+COPY index2.js/root/
+RUN nom install express
+CMD node /root/index2.js
