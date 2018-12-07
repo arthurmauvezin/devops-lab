@@ -1,4 +1,2 @@
-FROM node
-RUN npm install
-COPY . /app
+FROM node:lts-alpine
 CMD node index2.js
