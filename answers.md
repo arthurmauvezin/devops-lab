@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: FRITZ
+Firstname: Léo
 
 ## 2.2
 command:
