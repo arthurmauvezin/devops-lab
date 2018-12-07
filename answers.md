@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: Garcia	
+Firstname: Juan Pablo
 
 ## 2.2
 command:
