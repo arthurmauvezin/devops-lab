@@ -8,9 +8,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 var database = mysql.createConnection({
     host : "localhost",
     user : "root",
-    password : "",
+    password : "root",
     database : "project",
-    port : "3306"
+    port : "8888"
 });
 
 //Firewall
