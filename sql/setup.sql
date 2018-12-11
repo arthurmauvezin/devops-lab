@@ -20,6 +20,9 @@ SET time_zone = "+00:00";
 -- Table structure for table `animals`
 --
 
+DROP DATABASE zoo
+CREATE DATABASE zoo;
+
 CREATE TABLE `animals` (
 `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
