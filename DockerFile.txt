@@ -1,0 +1,7 @@
+cd /c/Users/litou/OneDrive/Bureau/tpdocker/devops-lab
+npm i -g n
+n latest
+mkdir test && cd test
+npm init -y
+npm i -S express
+node index.js
