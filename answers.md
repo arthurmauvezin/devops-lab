@@ -4,11 +4,11 @@ Lastname: Thery
 Firstname: Antoine
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
-question:
-command:
+question: yes, but we have to make sure to expose the proper port so that our app can listen for incoming requests. We will expose the port 3000 because that is where we are listening. Even after this it doesnt work on my machine because I was using play with docker
+command: EXPOSE 3000
 
 ## 2.5
 question:
