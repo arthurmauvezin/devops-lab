@@ -654,17 +654,18 @@ app.get('/animals/:id/food/', function (req, res) {
 app.get('/food-stats/', function (req, res) {
     var query = "SELECT animals.id,  IF(animals.food_per_day=0,0,food.quantity/animals.food_per_day) AS days_left  from animals INNER JOIN food ON food.id_animal=animals.id";
 
-  /*  db.query(query, function (err, result, fields) {
+    db.query(query, function (err, result, fields) {
         if (err) throw err;
         res.send(JSON.stringify(result));
     });
 });
-*/
+
 
 app.listen(3000, function () {
-    db.connect(function (err) {
+    /*db.connect(function (err) {
         if (err) throw err;
         console.log("connection to the db was successful");
     })
+    */
     console.log("listening on port 3000");
 });
