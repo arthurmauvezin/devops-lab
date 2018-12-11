@@ -1,0 +1,10 @@
+{
+  "name": "Zoo_Project",
+  "version": "1.0.0",
+  "description": "Project on Docker",
+  "author": "Corentin COSTE",
+  "main": "ZooProject.js",
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
