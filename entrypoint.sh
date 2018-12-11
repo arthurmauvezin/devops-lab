@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 database=zoo
 wait_time=15s
 password=root
