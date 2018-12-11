@@ -5,9 +5,9 @@ Firstname: Augustin
 
 ## 2.2
 command: 
-git clone https://github.com/AuGGuermond/devops-lab.git
-docker build -t dockerimg .
-docker run dockerimg
+git clone https://github.com/AuGGuermond/devops-lab.git   ,
+docker build -t dockerimg .   ,
+docker run dockerimg   ,
 
 
 ## 2.3
