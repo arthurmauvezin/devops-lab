@@ -214,10 +214,10 @@ function initializeData(){
 /*************************************************** LISTENING ***************************************************/
 app.listen(3000, function () {
 	// Connection to database
-	db.connect( function (err) {
+	/*db.connect( function (err) {
 		if (err) throw err;
 		console.log('Connection to database successful!');
-	});
+	});*/
 	
 	initializeData(); // Initializing the data array with database schema
 	
