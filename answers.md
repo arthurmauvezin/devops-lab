@@ -4,7 +4,7 @@ Lastname: CHUET
 Firstname: Fiona
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
 question:
