@@ -1,3 +1,3 @@
 FROM node
-ADD index.js /devops-lab/
-CMD node index.js
+ADD index.js /root/
+CMD node /root/index.js
