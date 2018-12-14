@@ -2,14 +2,21 @@
 	const  mysql =  require ( 'mysql' ); 
 	const  app = express();
 	const  bodyParser =  require ( 'body-parser' );
+	
+	const diegohost = process.environment.MYSQL_HOST;
+	const diegoport = process.environment.MYSQL_PORT;
+	const diegodatabase = process.environment.MYSQL_DATABASE;
+	const diegologin = process.environment.MYSQL_LOGIN;
+	const diegopassword = process.environment.MYSQL_PASSWORD;
 
 	app.use(bodyParser.urlencoded({ extended:  true  }));
 
-	var  db = mysql.createConnection({ host:  "localhost" ,
-		user:  "root" ,
-		password:  "root" ,
-		database:  "project" ,
-		port:  "8889" });
+	var  db = mysql.createConnection({ 
+		host:  diegohost ,
+		user:  diegologin ,
+		password:  diegopassword,
+		database:  diegodatabase ,
+		port: diegoport });
 
 	app.use( function (req, res, next) {  if  ( "key"   in  req.query) {
 		console.log(req.method);
@@ -861,7 +868,9 @@
 
 
 
-	app.listen( 3000 ,  function () { db.connect( function (err) {
+	app.listen( 3000 ,  function () { 
+		
+		db.connect( function (err) {
 		if  (err)  throw  err;
 		console .log( 'Connection to database successful!' );
 	}); 

@@ -5,10 +5,11 @@ Firstname: Diego
 
 ## 2.2
 command:
+sudo docker run diego
 
 ## 2.3
-question:
-command:
+question:It fails because ports aren't opened.
+command: sudo docker run -p 3000:3000 diego
 
 ## 2.5
 question:
