@@ -96,11 +96,11 @@ function filter(req,query,conditions,table){
 }
 // connect to the database
 var db = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "",
-	database: "zoo",
-	port: "3306"
+	host: process.environment.MYSQL_HOST,
+	user: process.environment.MYSQL_LOGIN,
+	password: process.environment.MYSQL_PASSWORD,
+	database: process.environment.MYSQL_DATABASE,
+	port: process.environment.MYSQL_PORT
 });
 // wirefall function called before every route
 app.use(function(req, res, next) {

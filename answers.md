@@ -5,10 +5,14 @@ Firstname: Basile - Senthan
 
 ## 2.2
 command:
+sudo docker run docker
 
 ## 2.3
 question:
 command:
+We
+We open the port
+docker run -p 8888:3000 -td docker
 
 ## 2.5
 question:
