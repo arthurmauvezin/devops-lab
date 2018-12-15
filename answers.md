@@ -6,6 +6,15 @@ Firstname: Antoine
 ## 2.2
 command:
 
+FROM node:lts-alpine
+
+COPY index.js /root/
+
+RUN npm install express mysql
+
+CMD node /root/index.js
+
+
 ## 2.3
 question:
 command:
