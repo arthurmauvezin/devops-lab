@@ -4,10 +4,10 @@ Lastname: Metharam
 Firstname: Michael
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
-question:
+question: The call fails because the docker image doesn't know which port to connect to.
 command:
 
 ## 2.5
