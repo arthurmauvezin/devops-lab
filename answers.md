@@ -7,7 +7,7 @@ Firstname: Michael
 command: docker run app
 
 ## 2.3
-question: The call fails because the docker image doesn't know which port to connect to.
+question: The call fails because the the container's ports are not published to the outside world by default. Furthermore, it does not know the necessary parameters to connect to the MySQL database. 
 command:
 
 ## 2.5
