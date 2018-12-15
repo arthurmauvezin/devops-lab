@@ -7,8 +7,9 @@ Firstname: Michael
 command: docker run app
 
 ## 2.3
-question: The call fails because the the container's ports are not published to the outside world by default. Furthermore, it does not know the necessary parameters to connect to the MySQL database. 
 command:
+question: The call fails because the the container's ports are not published to the outside world by default. Furthermore, it does not know the necessary parameters to connect to the MySQL database. To rectify this, we can add the following line to our Dockerfile:
+command: EXPOSE port_number
 
 ## 2.5
 question:
