@@ -12,10 +12,14 @@ command: docker run -i --expose:3000 app
 
 ## 2.5
 question: Il faut se login pour push
-command: la commande est : docker tag myapp raphlopes/devops-lab
+command: la commande est : docker login
+docker tag myapp raphlopes/devops-lab
+docker push raphlopes/devops-lab
 
 ## 2.6
-command:
+command: docker system prune -a
+docker pull raphlopes/devops-lab
+docker create raphlopes/devops-lab
 
 question:
 command:
