@@ -1,8 +1,14 @@
-FROM node:7
+FROM dockerfile/ubuntu
 WORKDIR /app
 
-RUN npm install express
-RUN npm install MySQL
-COPY . /app
+RUN apt-get update
+RUN apt-get install nodejs
+RUN apt-get install npm
+RUN apt-get install express
+RUN apt-get install MySQL
 
+COPY zooAT.js ./
+
+MOUNT ["/etc/mysql","/var/lib/mysql"] 
+EXPOSE 3306
 CMD node zooAT.js
