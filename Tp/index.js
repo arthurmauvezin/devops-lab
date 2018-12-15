@@ -2,6 +2,11 @@
     const mysql = require('mysql');
     const app = express();
     const bodyParser = require ('body-parser');
+    const rhost = process.environment.MYSQL_HOST;
+    const rport = process.environment.MYSQL_PORT;
+    const rdatabase = process.environment.MYSQL_DATABASE;
+    const rlogin = process.environment.MYSQL_LOGIN;
+    const rpassword = process.environment.MYSQL_PASSWORD;
 
 
     var db = mysql.createConnection( {  // Connexion crée avec les paramètres de notre choix, ici ceux de notre base de données
