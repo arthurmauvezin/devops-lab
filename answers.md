@@ -56,7 +56,7 @@ SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
 
 ## 3.1
-command:
+command: docker-compose up
 
 ## 3.4
 command:
