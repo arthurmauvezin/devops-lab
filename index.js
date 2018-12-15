@@ -6,23 +6,31 @@
  * MIT Licensed
  */
 
+
+
 'use strict';
 
 const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
+const dhost = process.environment.MYSQL_HOST;
+const dport = process.environment.MYSQL_PORT;
+const ddatabase = process.environment.MYSQL_DATABASE;
+const dlogin = process.environment.MYSQL_LOGIN;
+const dpassword = process.environment.MYSQL_PASSWORD;
 
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 
 var db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "root",
-    database: "project",
-    port: "3306"
+    host: dhost,
+    user: dlogin,
+    password: dpassword,
+    database: ddatabase,
+    port: dport
+    
 });
 
 ///Firewall////
@@ -599,7 +607,7 @@ app.get('/staff/:id', function (req, res) {
         res.send(JSON.stringify(result));
     });
 });
-
+console.log('hello');
 app.listen(3000, function () {
     db.connect(function (err) {
         if (err) throw err;
