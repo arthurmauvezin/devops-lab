@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // CONNECTION
 var db = mysql.createConnection({
-	host: "localhost" ,
+	host: process.env.MYSQL_HOST ,
 	user: "root" ,
 	password: "" ,
 	database: "project" ,
