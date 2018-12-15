@@ -1,15 +1,24 @@
+
+
+
 const express = require('express');
 const mysql = require('mysql');
 const app = express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 
+const Thost = process.environment.MYSQL_HOST;
+const Tport = process.environment.MYSQL_PORT;
+const Tdatabase = process.environment.MYSQL_DATABASE;
+const Tuser = process.environment.MYSQL_LOGIN;
+const Tpassword = process.environment.MYSQL_PASSWORD;
+
 var db = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "",
-	database: "zoo",
-	port: "3306"
+	host:Thost,
+	user: Tuser,
+	password: Tpassword,
+	database: Tdatabase,
+	port: Tport
 });
 
 
