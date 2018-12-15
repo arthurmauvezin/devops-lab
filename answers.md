@@ -4,7 +4,7 @@ Lastname: Vazquez de Leon
 Firstname: Ivan
 
 ## 2.2
-command:
+command:docker build -t node-app .
 
 ## 2.3
 question:
