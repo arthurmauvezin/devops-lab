@@ -44,8 +44,16 @@ ou
 docker rename competent_haibt api
 
 ## 2.8
-question: on utilise docker run -it louisclavero/devops_lab /bin/bash
+question: on utilise docker run -it raphlopes/devops-lab /bin/bash
 output:
+PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
+NAME="Debian GNU/Linux"
+VERSION_ID="9"
+VERSION="9 (stretch)"
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
 
 ## 3.1
 command:
