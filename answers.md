@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname:sugunaparajan
+Firstname:agetha
 
 ## 2.2
 command:
