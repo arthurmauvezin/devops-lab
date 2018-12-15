@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname:HADI
+Firstname:Amina
 
 ## 2.2
 command:
