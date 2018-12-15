@@ -4,16 +4,17 @@
     const bodyParser = require ('body-parser');
     const rhost = process.environment.MYSQL_HOST;
     const rport = process.environment.MYSQL_PORT;
-    const rdatabase = process.environment.MYSQL_DATABASE;
+    const rdb = process.environment.MYSQL_DATABASE;
     const rlogin = process.environment.MYSQL_LOGIN;
-    const rpassword = process.environment.MYSQL_PASSWORD;
+    const rmdp = process.environment.MYSQL_PASSWORD;
 
 
     var db = mysql.createConnection( {  // Connexion crée avec les paramètres de notre choix, ici ceux de notre base de données
-        host : "localhost",
-        user : "root",
-        password : "",
-        database : "zoo"
+    host: rhost,
+    user: rlogin,
+    password: rmdp,
+    database: rdb,
+    port: rport
     });
     app.use(bodyParser.urlencoded({ extended: true }));
 
