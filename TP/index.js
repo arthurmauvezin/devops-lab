@@ -5,13 +5,18 @@ const express = require('express');
 const mysql = require('mysql');
 const app = express();
 const bodyParser = require ('body-parser');
+const rhost = process.environment.MYSQL_HOST;
+const rport = process.environment.MYSQL_PORT;
+const rdatabase = process.environment.MYSQL_DATABASE;
+const rlogin = process.environment.MYSQL_LOGIN;
+const rpassword = process.environment.MYSQL_PASSWORD;
 
 // Creation de la connection avec la base de données locale //
 var db = mysql.createConnection( {
-    host : "localhost",
-    user : "root",
-    password : "",
-    database : "project"
+    host : rhost,
+    user : rlogin,
+    password : rpassword,
+    database : rdatabase
 });
 
 app.use(bodyParser.urlencoded({ extended: true }));
