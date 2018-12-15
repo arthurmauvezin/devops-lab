@@ -1,7 +1,7 @@
 # Answers
 
 Lastname: Colin de Verdière
-Firstname: Matthieu
+Firstname: Mathieu
 
 ## 2.2
 command:
