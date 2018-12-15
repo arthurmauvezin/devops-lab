@@ -4,11 +4,11 @@ Lastname:Lopes
 Firstname:Raphael
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
-question:
-command:
+question: Car le port n'est pas ouvert
+command: docker run -i --expose:3000 app
 
 ## 2.5
 question:
