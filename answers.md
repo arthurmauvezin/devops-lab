@@ -8,21 +8,27 @@ command: docker run app
 
 ## 2.3
 question: Car le port n'est pas ouvert
+
 command: docker run -i --expose:3000 app
 
 ## 2.5
 question: Il faut se login pour push
+
 command: la commande est : docker login
+
 docker tag myapp raphlopes/devops-lab
+
 docker push raphlopes/devops-lab
 
 ## 2.6
 command: docker system prune -a
 
 question: docker pull raphlopes/devops-lab
+
 docker create raphlopes/devops-lab 
 
 command: docker run raphlopes/devops-lab
+
 docker ps -a
 CONTAINER ID        IMAGE                  COMMAND                 CREATED             STATUS                      PORTS               NAMES
 17b74320d489        myapp                  "node /root/index.js"   5 minutes ago       Exited (1) 5 minutes ago                        competent_haibt
@@ -36,7 +42,9 @@ command: docker start -d --net=host competent_haibt
 
 ## 2.7
 question: on utilise docker ps -a
+
 question: le nom est competent_haibt
+
 command: docker ps -a
 
 command: docker start -d --name api raphlopes/devops-lab
@@ -45,6 +53,7 @@ docker rename competent_haibt api
 
 ## 2.8
 question: on utilise docker run -it raphlopes/devops-lab /bin/bash
+
 output:
 PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
 NAME="Debian GNU/Linux"
