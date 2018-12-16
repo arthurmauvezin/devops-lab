@@ -5,17 +5,22 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
+const dhost = process.env.MYSQL_HOST;
+const dport = process.env.MYSQL_PORT;
+const ddatabase = process.env.MYSQL_DATABASE;
+const dlogin = process.env.MYSQL_LOGIN;
+const dpassword = process.env.MYSQL_PASSWORD;
 
 //use the body-parser library in our application
 app.use(bodyParser.urlencoded({extended: true}));
 
 //connection to the database 
 var database = mysql.createConnection({
-    host : "localhost",
-    user : "root",
-    password : "root",
-    database : "project",
-    port : "8889"
+    host : dhost,
+    user : dlogin,
+    password : dpassword,
+    database : ddatabase,
+    port : dport
 });
 
 //firewall
