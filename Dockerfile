@@ -16,4 +16,4 @@ EXPOSE 3306
 COPY . /root/
 
 
-CMD node zoo.js
+CMD node zoo.
