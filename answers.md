@@ -1,10 +1,10 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: Laureau
+Firstname: Arthur
 
 ## 2.2
-command:
+command: $ sudo docker build .
 
 ## 2.3
 question:
