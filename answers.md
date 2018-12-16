@@ -19,20 +19,22 @@ docker login
 docker tag dockerfile louanes/devops-lab
 docker push louanes/devops-lab
 
-Its the only push that worked for me, it refers to the repesetory
 
 ## 2.6
-command:
+command: docker system prune -a  : to delte all images created from start of the lab 
 
-question:
-command:
 
-command:
+question: we have to pull the image we pushed earlier
+command:docker pull louanes/devops-lab
 
+command: docker run louanes/devops-lab
+
+Just having some difficulties to run the img, there are some errors in js, coming back to it
 ## 2.7
 question:
 question:
-command:
+Since the img didnt run, it cant go into a container but there is the command to show coantainer details
+command: docker ps to show container ID PORTS NAME  
 
 command:
 
