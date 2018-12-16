@@ -6,7 +6,7 @@ services:
     environment:
       - MYSQL_HOST=localhost
       - MYSQL_LOGIN=root
-      - MYSQL_PASSWORD=""
-      - MYSQL_DATABASE="zoo"
-      - MYSQL_PORT="3306"
+      - MYSQL_PASSWORD=
+      - MYSQL_DATABASE=zoo
+      - MYSQL_PORT=3306
     image: godlikedocker/devops-lab
