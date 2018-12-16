@@ -10,10 +10,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // CONNECTION
 var db = mysql.createConnection({
 	host: process.env.MYSQL_HOST ,
-	user: "root" ,
-	password: "" ,
-	database: "project" ,
-	port: "3306"
+	user: process.env.MYSQL_USER ,
+	password: process.env.MYSQL_PASSWORD ,
+	database: process.env.MYSQL_DATABASE ,
+	port: process.env.MYSQL_PORT
 });
 
 
