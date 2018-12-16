@@ -30,7 +30,7 @@ command: docker ps -a
 command:
 
 ## 2.8
-question:
+question: Linux
 output:
 
 ## 3.1
