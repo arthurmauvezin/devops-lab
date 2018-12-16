@@ -763,8 +763,5 @@ app.delete('/staff/:id',function(req,res) {
 });
 
 app.listen(3000,function() {
-    /*db.connect(function(err) {
-        if(err) throw err;
-        console.log('example app listening on port 3000');
-    } );*/
+   console.log('App listening on port 3000!');
 });
