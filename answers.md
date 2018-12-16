@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: THANABALASINGAM
+Firstname: Senthan
 
 ## 2.2
 command:
