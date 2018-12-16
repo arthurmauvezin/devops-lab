@@ -1,15 +1,18 @@
+require('dotenv').config();
+
 const express = require('express');
 const mysql = require('mysql');
 const app = express();
 const bodyParser = require('body-parser');
 
+
 // connection
 var db = mysql.createConnection({
-host: "localhost",
-user: "root",
-password: "",
-database: "project",
-port: "3306"
+host: process.environment.MYSQL_HOST,
+	user: process.environment.MYSQL_LOGIN,
+	password: process.environment.MYSQL_PASSWORD,
+	database: process.environment.MYSQL_DATABASE,
+	port: process.environment.MYSQL_PORT
 });
 
 //firewall
@@ -1217,7 +1220,7 @@ app.get('/food-stats', function(req,res) {
 //  app listening
 app.listen(3000, function() {
 db.connect(function(err) {
-if (err) throw err;
+//if (err) throw err;
 console.log('Connection to database successful!');
 });
 console.log('Example app listening on port 3000!');
