@@ -8,31 +8,31 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 ////////////////Firewall/////////////////
-app.use(function (req, res, next){
-	if ("key" in req.query){
-		var key = req.query["key"];
-		var query = "SELECT * FROM users WHERE apikey='" + key + "'";
-		db.query(query, function (err, result, fields){
-			if (err) throw err;
-			if (result.length > 0){
-				next();
-			}
-			else{
-				res.status(403).send("Access denied");
-			}
-		});
-	}
-	else{
-		res.status(403).send("Access denied");
-	}
-});
+// app.use(function (req, res, next){
+// 	if ("key" in req.query){
+// 		var key = req.query["key"];
+// 		var query = "SELECT * FROM users WHERE apikey='" + key + "'";
+// 		db.query(query, function (err, result, fields){
+// 			if (err) throw err;
+// 			if (result.length > 0){
+// 				next();
+// 			}
+// 			else{
+// 				res.status(403).send("Access denied");
+// 			}
+// 		});
+// 	}
+// 	else{
+// 		res.status(403).send("Access denied");
+// 	}
+// });
 
 var db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "root123",
-  database: "iban",
-  port: "3306"
+	host: process.env.MYSQL_HOST,
+	user: process.env.MYSQL_USER,
+	password: process.env.MYSQL_PASSWORD_ROOT,
+	database: process.env.MYSQL_DATABASE,
+	port: process.env.MYSQL_PORT,
 });
 
 app.get('/', function(req, res) {
