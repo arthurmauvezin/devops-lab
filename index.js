@@ -5,13 +5,19 @@ const app = express();
 const bodyParser = require ( 'body-parser' );
 app.use(bodyParser.urlencoded({ extended : true}));
 
+const d_host = process.environment.MYSQL_HOST;
+const d_port = process.environment.MYSQL_PORT;
+const d_database = process.environment.MYSQL_DATABASE;
+const d_login = process.environment.MYSQL_LOGIN;
+const d_password = process.environment.MYSQL_PASSWORD;
+
 // Creation of the connection
 var db = mysql.createConnection({
-	host : "localhost",
-	user : "root",
-	password : "",
-	database : "project",
-	port : "3306"
+	host : d_host,
+	user : d_login,
+	password : d_password,
+	database : d_database,
+	port : d_port
 });
 // firewall
 app.use(function(req, res, next) {
