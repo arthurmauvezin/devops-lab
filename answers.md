@@ -15,7 +15,9 @@ command:  docker -i --expose:portNumber //with portNumber = port we open
 question: The reason is that the "docker push" uses the tag to identify the repository where it is supposed to push the image
 
 command: docker login //giving my logs
+
 docker tag appp myNameAccount/devops_lab //with myNameAccount our docker hub ID AND devops_lab the docker hub repository name
+
 docker push myNameAccount/devops_lab
 
 ## 2.6
