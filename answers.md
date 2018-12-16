@@ -26,13 +26,14 @@ docker push auriannect/zoo:testzoo
 ## 2.6
 command:docker rmi -f $(docker images -a -q)
 
-question:
+question: We now have deleted all of our images on our PC.
+Now when we run , docker will automatically pull the image from the repo on docker hub. 
 command:docker run auriannect/zoo:testzoo
 
 command:docker run --detach auriannect/zoo:testzoo
 
 ## 2.7
-question:
+question:docker ps allows us to lookat the list of cuncurrently running containers.
 question:
 command:docker ps
 
