@@ -1,0 +1,35 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Project API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/bpederencino/test-api.git"
+  },
+  "keywords": [
+    "RESTful",
+    "API"
+  ],
+  "author": "Bastien Pederencino",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://gitlab.com/bpederencino/test-api/issues"
+  },
+  "homepage": "https://gitlab.com/bpederencino/test-api#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.7"
+  }
+}
