@@ -13,15 +13,23 @@ Project Web - 2018/2019
 ///****************connect to database**************
 const express = require('express');
 const mysql = require('mysql');
-const bodyParser = require('body-parser');
 const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
+const bodyParser = require('body-parser');
+
+const t_host = process.environment.MYSQL_HOST;
+const t_port = process.environment.MYSQL_PORT;
+const t_database = process.environment.MYSQL_DATABASE;
+const t_login = process.environment.MYSQL_LOGIN;
+const t_password = process.environment.MYSQL_PASSWORD;
+
 var db = mysql.createConnection({
-host: "localhost",
-user: "root",
-password: "",
-database: "zoo"
+host: t_host,
+user: t_login,
+password: t_password,
+database: t_database
 });
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 ///FIREWALL
@@ -1025,10 +1033,10 @@ app.get('/food-stats', function(req, res) {
 
 
 
-app.listen(3000, function() {
+app.listen(3306, function() {
 	db.connect(function(err) {
 		if (err) throw err;
 		console.log('Connection to database successful!');
 	});
-	console.log('Example app listening on port 3000!');
+	console.log('Example app listening on port 3306!');
 });
