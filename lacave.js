@@ -2,14 +2,20 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
+const dockerhost = process.env.MYSQL_HOST;
+const dockerport = process.env.MYSQL_PORT;
+const dockerdatabase = process.env.MYSQL_DATABASE;
+const dockerlogin = process.env.MYSQL_LOGIN;
+const dockerpassword = process.env.MYSQL_PASSWORD;
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var db = mysql.createConnection({
-host: "localhost",
-user: "root",
-password: "",
-database: "project",
-port: "3306"
+host: dockerhost,
+user: dockerhost,
+password: dockerpassword,
+database: dockerdatabase,
+port: dockerport
 });
 
 ////////////////////////////////////
