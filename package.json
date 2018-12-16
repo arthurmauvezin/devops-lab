@@ -1,0 +1,23 @@
+{
+  "name": "devops-lab",
+  "version": "1.0.0",
+  "description": "This lab goal is to introduce DevOps concept (Git, Gitflow, Docker,...) seen in [corresponding course](https://github.com/arthurmauvezin/devops-course). It is adapted to fit ece courses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomguillermou/devops-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomguillermou/devops-lab/issues"
+  },
+  "homepage": "https://github.com/tomguillermou/devops-lab#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
