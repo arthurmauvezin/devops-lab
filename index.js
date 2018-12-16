@@ -4,13 +4,18 @@ const  app = express();
 
 const bodyParser= require ('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
+	const h = process.environment.MYSQL_HOST;
+	const p = process.environment.MYSQL_PORT;
+	const d = process.environment.MYSQL_DATABASE;
+	const l = process.environment.MYSQL_LOGIN;
+	const p = process.environment.MYSQL_PASSWORD;
 
 var  db = mysql.createConnection({ 
-	host:  "localhost" ,
-	user:  "root" ,
-	password:  "root" ,
-	database:  "project" ,
-	port:  "3307" });
+	host:  h ,
+	user:  l ,
+	password: p ,
+	database:  d ,
+	port:  p });
 
 app.use (function(req,res,next){
 	console.log(req.method);
@@ -922,8 +927,8 @@ app.get('/food-stats', function(req, res) {
 
 
 app.listen( 3000 ,  function () { db.connect( function (err) {
-	/*if  (err)  throw  err;
-	console .log( 'Connection to database successful!' ); */
+	if  (err)  throw  err;
+	console .log( 'Connection to database successful!' );
 }); 
 console .log( 'Example app listening on port 3000!' );
 });
