@@ -1,0 +1,10 @@
+FROM node:8-jessie
+
+COPY . /root
+
+RUN npm install express 
+RUN npm install mysql
+
+CMD node /root/zoo.js
+
+EXPOSE 3000
