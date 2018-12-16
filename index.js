@@ -4,13 +4,13 @@ const app = express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var db = mysql.createConnection({
+/*var db = mysql.createConnection({
 host: "localhost",
 user: "root",
 password: "",
 database: "project",
 port: "3306"
-});
+});*/
 
 app.use(function(req, res, next) {
 	if ("key" in req.query) {
