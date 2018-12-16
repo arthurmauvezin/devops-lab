@@ -14,14 +14,14 @@
 	});
 
 	//Firewall
-	app.use(function(req, res, next) {
+	/*app.use(function(req, res, next) {
 		if (req.query.key === 'ceciestmonjeton') {
 			next();
 		}
 		else {
 			res.status(403).send('Access denied');
 		}
-	});
+	});*/
 
 	//Connection to the database
 	app.listen( 3000 , function () {
