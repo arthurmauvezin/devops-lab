@@ -26,7 +26,7 @@ command:
 sudo docker system prune -a
 
 question:
-I pull the image from docker hub then start it.
+We pull the image from docker hub then start it.
 command:
 sudo docker pull godlikedocker/devops-lab
 
@@ -35,12 +35,14 @@ sudo docker create godlikedocker/devops-lab
 sudo docker run --detach godlikedocker/devops-lab
 ## 2.7
 question:
-sudo docker ps -a
+We execute the following command "sudo docker ps -a" to get 
 question:
-
+We can see the name of our started container : objective_gates
+We are going to change that into js_api
 command:
 sudo docker ps -a
 command:
+sudo docker rename objective_gates js_api
 
 ## 2.8
 question:
