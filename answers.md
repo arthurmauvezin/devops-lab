@@ -9,7 +9,7 @@ docker build -t app .
 docker run --name api app
 execute sudo docker rm api to remove the preceding container api, so the new one can still be called api
 output : 
-Successfully built dd9f9fb511c0
+Successfully built IMAGE_ID
 
 ## 2.3
 question: The probem is that the port are not opened on the docker side so it can't connect with the rest of the application on the inside. To resolve this we add EXPOSE 3000 and EXPOSE 3306 to our Dockerfile
@@ -26,12 +26,13 @@ question: push the image to dockerhub. So have to login to docker then verify th
 command: docker push mallocgab/zoo_api
 
 ## 2.6
-command:
+command: docker rmi -f IMAGE_ID
 
-question:
-command:
+question: We want to access my image on the docker hub repo. Since it is not on my computer it will get it from docker hub.  
+command: docker run mallocgab/zoo_api
 
-command:
+question : detached mode with option -d from man docker run
+command: docker run -d mallocgab/zoo_api
 
 ## 2.7
 question:
