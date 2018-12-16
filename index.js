@@ -5,13 +5,17 @@ const app = express();
 const bodyParser=require('body-parser');
 app.use(bodyParser.urlencoded({extended:true}));
 
+const dhost = process.env.MYSQL_HOST;
+const dport = process.env.MYSQL_PORT;
+const ddatabase = process.env.MYSQL_DATABASE;
+const dlogin = process.env.MYSQL_LOGIN;
+const dpassword = process.env.MYSQL_PASSWORD;
 
 var db = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "",
-	database: "project",
-	port: "3306"
+	host : dhost,
+    user : dlogin,
+    password : dpassword,
+    database : ddatabase
 });
 
 //UPDATE UN-PAR-UN OU PLUSIEURS - Fait

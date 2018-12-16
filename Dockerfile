@@ -6,6 +6,7 @@ COPY index.js ./
 RUN npm install express
 RUN npm install mysql
 
-EXPOSE 3000
+
 
 CMD ["node","index.js"]
+EXPOSE 3000

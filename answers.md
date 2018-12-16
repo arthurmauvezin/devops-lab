@@ -8,14 +8,14 @@ command: docker run app
 
 ## 2.3
 question: Le port n'a pas été ouvert
-command: docker run -i --expose:3000 app
+command: docker run -i -expose:3000 app
 
 ## 2.5
 question: Il faut au préalable se login avant de push
 command: 
 	docker login
-	docker tag myapp sagake/devops-lab
-	docker push sagake/devops-lab
+	docker tag app sagakedon/devops-lab
+	docker push sagakedon/devops-lab
 
 ## 2.6
 command: docker system prune -a
