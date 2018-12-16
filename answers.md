@@ -1,41 +1,48 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: Couvreur
+Firstname: Adrien
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
-question:
-command:
+question: Cela ne marche pas car le port n'est pas ouvert
+command: docker run -i --expose:3000 app
 
 ## 2.5
-question:
-command:
+question: Il faut d'abord se login puis tag et push l'image
+command: docker login
+
 
 ## 2.6
-command:
+command: sudo docker system prune -a
 
-question:
-command:
+question: sudo docker pull Acouvreur97/devops_lab
 
-command:
+command: sudo docker create Acouvreur97/devops_lab
+
+command: sudo docker run Acouvreur97/devops_lab
 
 ## 2.7
-question:
-question:
-command:
+question: on utilise sudo docker ps -a pour avoir les conteneurs
+question: 
+command: sudo docker ps-a
 
-command:
+command: sudo docker start -d --name docker_zoo_api Acouvreur97/devops_lab
 
 ## 2.8
-question:
-output:
+question: sudo docker run -it Acouvreur97/devops_lab /bin/bash 
+output: NAME:"ALPINE LINUX"
+ID=alpine
+VERSION_ID=3.8.1
+PRETTY_NAME="Alpine Linux v3.8"
+HOME_URL="http://alpinelinux.org"
+BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
-command:
+command: sudo docker-compose up
 
 ## 3.4
-command:
-command:
+command: sudo docker-compose up -d
+command: sudo docker-compose logs
