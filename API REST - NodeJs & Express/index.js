@@ -59,7 +59,7 @@ app.use(function(req, res, next) {
 })
 
 // HTTPS
-
+/*
 var key = fs.readFileSync('encryption/private.key')
 var cert = fs.readFileSync( 'encryption/primary.crt' )
 var ca = fs.readFileSync( 'encryption/primary.crt' ) // need of intermediate.crt
@@ -69,9 +69,9 @@ var options = {
   cert: cert,
   ca: ca
 }
-
-https.createServer(options, app).listen(3007)
-http.createServer(app).listen(3000)
+*/
+//https.createServer(options, app).listen(3007)
+//http.createServer(app).listen(3000)
 
 // To force HTTPS port
 /*

@@ -1,3 +1,4 @@
+/*
 const mysql = require('mysql')
 
 const pool = mysql.createPool({
@@ -12,3 +13,4 @@ const pool = mysql.createPool({
 exports.getConnection = function getConnection() {
   return pool
 }
+*/

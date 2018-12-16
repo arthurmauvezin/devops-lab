@@ -21,7 +21,6 @@
   },
   "homepage": "https://gitlab.com/bpederencino/test-api#readme",
   "dependencies": {
-    "bcrypt": "^3.0.2",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.4",
