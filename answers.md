@@ -4,15 +4,16 @@ Lastname: Couvreur
 Firstname: Adrien
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
-question:
-command:
+question: Cela ne marche pas car le port n'est pas ouvert
+command: docker run -i --expose:3000 app
 
 ## 2.5
-question:
-command:
+question: Il faut d'abord se login puis tag et push l'image
+command: docker login
+
 
 ## 2.6
 command:
