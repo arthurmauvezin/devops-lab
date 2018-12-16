@@ -11,17 +11,17 @@ question: The port are closed on docker side thus the application can't connect.
 command: $ docker run --name api -P app
 
 ## 2.5
-question:I cannot push my image because it has to have the same name as the repo (devops-lab) and the local instance of docker has to be connected to the docker hub
+question:I cannot push my image because it has to have the correct tag like the repo (dev_api) and the local instance of docker has to be connected to the docker hub
 command: $ docker login --username=myusername, then type pwd
 docker tag: $ docker build -t mytag
 
 ## 2.6
-command:
+command: $ docker rmi -f IMAGE_ID
 
-question:
-command:
+question: I need to run the image from docker since I erased the one I had in local
+command: $ docker run myusername/dev_api
 
-command:
+command: $ docker run --detach mmetharam/devops-lab:test1
 
 ## 2.7
 question:
