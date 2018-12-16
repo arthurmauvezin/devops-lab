@@ -11,16 +11,18 @@ question:the reason why we can't acces is because the port are not opened yet.
 command:docker run -p 3000:3000 index.js
 
 ## 2.5
-question:
-command:
+question:to make it work, both local image and repository name's have to match
+command:docker tag index.js gautierrr/devops-lab
+docker push gautierrr/devops-lab
 
 ## 2.6
-command:
+command:docker system prune -a
 
 question:
-command:
+command:docker pull gautierrr/devops-lab
 
-command:
+command:docker create gautierrr/devops-lab
+docker run gautierrr/devops-lab
 
 ## 2.7
 question:
