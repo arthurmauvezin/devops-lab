@@ -12,7 +12,7 @@ command: docker run -d --expose 3000 node-app
 
 
 ## 2.5
-question:
+question: I didn't had problems uploading my image
 command:
 
 ## 2.6
