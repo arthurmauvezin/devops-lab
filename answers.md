@@ -4,7 +4,7 @@ Lastname: Quemat
 Firstname: Adrien
 
 ## 2.2
-command: $ docker run didiqu/project.js
+command: $ docker run -it -p 9000:3000 tuto
 
 ## 2.3
 question: Nous devons établir un port de connection explicite pour nous connecter
