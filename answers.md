@@ -7,7 +7,7 @@ Firstname:Clement
 command: docker run app .
 
 ## 2.3
-question: the port are not opened so we can not use postman for this part( with expose port number)
+question: we can not use postman for this part( with expose port number)
 command: docker run -e MYSQL_HOST='localhost' -e MYSQL_PORT='8080' -e MYSQL_DATABASE='project' -e MYSQL_LOGIN='root' -e MYSQL_PASSWORD='root' app
 ## 2.5
 question: We need to put a new tag on our image to identify the repository
