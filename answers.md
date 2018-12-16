@@ -1,18 +1,18 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: Kicinski
+Firstname: Ghislain
 
 ## 2.2
-command:
+command:docker run app
 
 ## 2.3
-question:
-command:
+question:l'appel du service avec postman ne fonctionne pas car le port n'est pas ouvert.
+command:docker run -p 3000:3000
 
 ## 2.5
-question:
-command:
+question: il faut changer le nom de l'image pour correspondre au repository.
+command: docker login
 
 ## 2.6
 command:
