@@ -6,3 +6,7 @@ services:
       - 3000
       - 8081
     environment:
+	MYSQL_DATABASE: ddatabase
+	MYSQL_LOGIN: dlogin
+	MYSQL_PASSWORD: dpassword
+	MYSQL_HOST: dhost

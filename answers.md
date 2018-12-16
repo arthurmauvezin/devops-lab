@@ -59,5 +59,5 @@ BUG_REPORT_URL="https://bugs.debian.org/"
 command: docker-compose up
 
 ## 3.4
-command:
-command:
+command: docker-compose up -d
+command: docker-compose logs
