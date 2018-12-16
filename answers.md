@@ -19,15 +19,16 @@ docker push victormoliner/devops-lab
 ## 2.6
 command: docker system prune -a
 
-question: we pull the image and then we start the container 
-command: docker create victormoliner/devops-lab
+question:
+command: 
+docker create victormoliner/devops-lab
 docker pull victormoliner/devops-lab
 
 command: docker run --detach victormoliner/devops-lab
 
 ## 2.7
-question: "docker ps -a" allows to know the status of containers created
-question: Name of the container is relaxed_mclean
+question: We see the status of containers created
+question: Name of our container is relaxed_mclean
 command: docker ps -a
 
 command: docker rename relaxed_mclean image_lab
