@@ -4,18 +4,21 @@ Lastname: LE
 Firstname: Tien Hoang-Dôn
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
-question:
-command:
+question: Le port n'a pas été ouvert
+command: docker run -i --expose:3000 app
 
 ## 2.5
-question:
-command:
+question: Il faut au préalable se login avant de push
+command: 
+	docker login
+	docker tag myapp sagake/devops-lab
+	docker push sagake/devops-lab
 
 ## 2.6
-command:
+command: docker system prune -a
 
 question:
 command:
