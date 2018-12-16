@@ -7,8 +7,8 @@ Firstname: Adrien
 command: $ docker run didiqu/project.js
 
 ## 2.3
-question:
-command:
+question: Nous devons établir un port de connection explicite pour nous connecter
+command: docker run -p 4200:4200
 
 ## 2.5
 question:
