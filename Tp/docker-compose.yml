@@ -3,7 +3,7 @@ services:
   my-service:
     image: AppTest
      ports:
-      - 2368    
+      - 3000   
     environment:
       MYSQL_ROOT_PASSWORD: mdp
       MYSQL_DATABASE: rdb
