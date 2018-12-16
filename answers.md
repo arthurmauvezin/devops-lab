@@ -17,8 +17,6 @@ command: docker run --name api -P app
 #2.4
 question: connect to mysql either with env variables in the dockerfile or with cl values
 command: docker run --name api -P -e MYSQL_HOST=172.17.0.1 -e MYSQL_PORT=3306 -e MYSQL_DATABASE=zooCorr -e MYSQL_USER=root -e MYSQL_PASSWORD=root app
-src : https://nickjanetakis.com/blog/docker-tip-65-get-your-docker-hosts-ip-address-from-in-a-container
-
 
 ## 2.5
 question: push the image to dockerhub. So have to login to docker then verify that the image has the same name as the repo (zoo_api), set it at build with -t option or using docker tag command. Then push
@@ -42,8 +40,10 @@ command: docker run -d --name zoo_api app
 
 ## 2.8
 question: To be able to use stdin we need option -i and for a pseudo-tty then use -t
+
 command: docker run -it api sh
-output: 3.8.1
+output: 
+3.8.1
 NAME="Alpine Linux"
 ID=alpine
 VERSION_ID=3.8.1
