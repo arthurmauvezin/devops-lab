@@ -17,23 +17,29 @@ command: docker tag 58c0cd33a6e8 maxthedockenman/devops-lab:app
 docker push maxthedockerman/devops-lab
 
 ## 2.6
-command:
+command: docker rmi -f $(docker images -q)
+or docker system prune -a
 
-question:
-command:
+question: before we start the container, we pull it from the distant repository 
+command: docker pull maxthedockerman/devops-lab:app
 
-command:
+command: docker run --detach maxthedockerman/devops-lab
 
 ## 2.7
-question:
-question:
-command:
+question: We use the command docker ps -a to show all containers
+question: for me it is named adoring_borg
+command: docker ps -a
 
-command:
+command: docker rename adoring_borg webapi
 
 ## 2.8
-question:
-output:
+question: The OS is running on Alpine Linux
+output: NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.8.1
+PRETTY_NAME="Alpine Linux v3.8"
+HOME_URL="http://alpinelinux.org"
+BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
 command:
