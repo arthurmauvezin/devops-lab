@@ -32,7 +32,7 @@ command:
 - Run container in detached mode: docker run -d antoinebattagliotti/devops-lab:webService
 
 ## 2.7
-question: In detached mode we can tell if a container is starting by using the command to list containers: docker ps, show all running container by default and to see all containers even those not running we would have to use: docker ps -a.
+question: In detached mode we can tell if a container is running by using the command to list containers: docker ps (show all running container by default and to see all containers even those not running we would have to use: docker ps -a).
 question: We can see our container name by listing our container with the previous command under 'Name'. Our container name is: 'ecstatic_williams'. After renaming our container we can check if the changes have been corrrectly applied.
 command:
 - Check running container: docker ps
