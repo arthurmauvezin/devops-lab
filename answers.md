@@ -12,6 +12,7 @@ command: sudo docker run app_test2
 
 
 
+
 ## 2.3: Access to your service
 question: Ports are not opened
 command: sudo docker run -i --expose:3000 app_test2
