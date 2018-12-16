@@ -4,22 +4,21 @@ Lastname:Lozano Hernandez
 Firstname:Jesus Adolfo
 
 ## 2.2
-command:
+command:docker build -t jalh24/web:app .
 
 ## 2.3
-question:
-command:
+question:because we need to add the ports of the docker container
+command:docker run jalh24/web:app
 
 ## 2.5
-question:
-command:
+question: The image can not be pushed because it needs to have the same name as the new repository
+command:docker push jalh24/web:app
 
 ## 2.6
-command:
+command:docker rmi -f $(docker images -q)
 
 question:
 command:
-
 command:
 
 ## 2.7
