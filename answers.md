@@ -4,10 +4,11 @@ Lastname:Bosseray
 Firstname:Alexis
 
 ## 2.2
-command: docker build -t app . 
+command: docker run -d app // just before : docker build -t app .
+
 
 ## 2.3
-question:
+question: The call fail because the port is not  open 
 command:
 
 ## 2.5
