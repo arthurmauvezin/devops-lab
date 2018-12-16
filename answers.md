@@ -37,7 +37,7 @@ command: sudo docker ps -a
 command:  sudo docker start -d --name rest_api Charles-le-bg-du-91/devops_lab 
 
 ## 2.8
-question: "sudo docker run -it louisclavero/devops_lab /bin/bash" permit to enter the interactive mode
+question: "sudo docker run -it Charles-le-bg-du-91/devops_lab /bin/bash" permit to enter the interactive mode
 
 ## 3.1
 command: sudo docker-compose up
