@@ -2,6 +2,7 @@
 
 Lastname: MICHEL
 Firstname: Maxime
+Partner: PRAT Arthur
 
 ## 2.2
 command: "~\devops-lab> docker run app
