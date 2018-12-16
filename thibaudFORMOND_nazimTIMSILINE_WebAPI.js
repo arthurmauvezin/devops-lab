@@ -2,6 +2,9 @@ const express = require('express');
 const mysql = require('mysql');
 const app = express();
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 app.use(bodyParser.urlencoded({ extended: true })); // librairie bodyParser
 
@@ -11,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // librairie bodyParser
 
 
 
-app.listen(3000, function() {
+app.listen(process.env.PORT, function() {
 	db.connect(function(err) {
 		if (err) throw err;
 		console.log('Connection to database successful!');
@@ -21,11 +24,11 @@ app.listen(3000, function() {
 
 //Création de la database 
 var db = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "",
-	database: "zoo2",
-	port: "3306"
+	host: process.env.MYSQL_HOST,
+	user: process.env.MYSQL_USER,
+	password: process.env.MYSQL_PASSWORD,
+	database: process.env.MYSQL_DATABASE,
+	port: process.env.MYSQL_PORT
 });
 
 

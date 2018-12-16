@@ -1,0 +1,26 @@
+version: '3'
+services:
+  app:
+    build: .
+    container_name: zoo
+    restart: always
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=production
+      - MYSQL_HOST=mysql:3306
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=zoo
+      - MYSQL_USER=zoo
+      - MYSQL_PASSWORD=zookeeper
+volumes:
+  db_data: {}
