@@ -1,8 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
-
+Lastname: bahri
+Firstname: skander
 ## 2.2
 command:
 
