@@ -1,33 +1,33 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname:BELAMY
+Firstname: Marie-Claire
 
 ## 2.2
-command:
+command: docker run myapp
 
 ## 2.3
 question:
-command:
+command: docker run 3000:80 myapp
 
 ## 2.5
 question:
-command:
+command: docker puch pseudo/image
 
 ## 2.6
-command:
+command: docker rmi image
 
 question:
-command:
+command: docker create myapp
 
-command:
+command: docker run myapp
 
 ## 2.7
 question:
 question:
-command:
+command: docker ps -l
 
-command:
+command: 
 
 ## 2.8
 question:
