@@ -26,17 +26,20 @@ command:
 sudo docker system prune -a
 
 question:
+I pull the image from docker hub then start it.
 command:
 sudo docker pull godlikedocker/devops-lab
 
 command:
 sudo docker create godlikedocker/devops-lab
-sudo docker run godlikedocker/devops-lab
+sudo docker run --detach godlikedocker/devops-lab
 ## 2.7
 question:
+sudo docker ps -a
 question:
-command:
 
+command:
+sudo docker ps -a
 command:
 
 ## 2.8
