@@ -1,0 +1,11 @@
+version: '3'
+services:
+  my-service:
+    image: app
+     ports:
+      - 3000   
+    environment:
+      MYSQL_DATABASE: mydb
+      MYSQL_LOGIN: mylogin
+      MYSQL_PASSWORD: mypassword
+      MYSQL_HOST: myhost
