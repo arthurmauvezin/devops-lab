@@ -48,7 +48,7 @@ question: the name of the container is nostalgic_booth
 
 command: `docker ps -a`
 
-command: `docker start -d --name rest_api bpederencino/devops-lab`
+command: `docker start -d --name api bpederencino/devops-lab`
 
 ## 2.8
 question: Execute the following command to use interactive mode: `docker run -it bpederencino/devops-lab /bin/bash`. Now, with `cat /etc/*release` I get the following output.
