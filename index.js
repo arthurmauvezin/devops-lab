@@ -11,12 +11,22 @@ Project Web - 2018/2019
 */
 
 ///****************connect to database**************
+
+const d_host = process.environment.MYSQL_HOST;
+const d_port = process.environment.MYSQL_PORT;
+const d_database = process.environment.MYSQL_DATABASE;
+const d_login = process.environment.MYSQL_LOGIN;
+
 const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 var db = mysql.createConnection({
+
+
+const d_password = process.environment.MYSQL_PASSWORD;
+
 host: "localhost",
 user: "root",
 password: "",

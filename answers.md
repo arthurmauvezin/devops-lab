@@ -4,38 +4,47 @@ Lastname:Braun
 Firstname:Pierre-Louis
 
 ## 2.2
-command:
+command: docker run app .
 
 ## 2.3
-question:
-command:
+question:There is a port probleme. We  want to use the port 3000 so we have to precise it.
+command: docker run -i --expose 3000 app
 
 ## 2.5
-question:
-command:
+question:The first thing we have to do is getting connected and to use a tag to push
+command:docker login
+command:docker tag index.js pierrelouisbraun/devops_lab
+command:docker push pierrelouisbraun/devops-lab
 
 ## 2.6
-command:
+command:docker system prune -a
 
-question:
-command:
+question: We pull the image 
 
-command:
+command:docker pull pierrelouisbraun/devops-lab
 
 ## 2.7
+question:We check the containers and their status
 question:
-question:
-command:
+command: dockers ps -a 
 
-command:
+command: docker start -d --name js_api pierrelouisbraun/devops_lab 
 
 ## 2.8
-question:
-output:
+question:check the OS running on the Docker Container
+
+output:NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.8.1
+PRETTY_NAME="Alpine Linux v3.8"
+HOME_URL="http://alpinelinux.org"
+BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
-command:
+command:docker-compose up
 
 ## 3.4
+command: docker-compose up -d
+command: docker-compose logs
 command:
 command:
