@@ -16,16 +16,22 @@ docker run -p 3000:3000 -td api
 
 ## 2.5
 question:
-command:
+We have to change the tag of our image to identify the repository
 
+command:
+docker tag 60689465a914  godlikedocker/devops-lab:latest
+docker push godlikedocker/devops-lab:latest
 ## 2.6
 command:
+sudo docker system prune -a
 
 question:
 command:
+sudo docker pull godlikedocker/devops-lab
 
 command:
-
+sudo docker create godlikedocker/devops-lab
+sudo docker run godlikedocker/devops-lab
 ## 2.7
 question:
 question:
