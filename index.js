@@ -864,9 +864,9 @@ app.get('/food-stats', function(req, res) {
 /** Listen to the port 3000 **/
 
 app.listen(3000, function() {
-    db.connect(function(err) {
-        if (err) throw err;
-        console.log('Connection to database successful!')
-    });
+    //db.connect(function(err) {
+        //if (err) throw err;
+        //console.log('Connection to database successful!')
+    //});
     console.log('listening port 3000');
 });
