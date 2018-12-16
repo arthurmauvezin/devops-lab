@@ -8,11 +8,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Connection to database
 var db = mysql.createConnection({
-	host: "localhost" ,
-	user: "root" ,
-	password: "" ,
-	database: "zoo" ,
-	port: "3306"
+	host: process.env.MYSQL_HOST,
+	user: process.env.MYSQL_USER,
+	password: process.env.MYSQL_PASSWORD,
+	database: process.env.MYSQL_DATABASE,
+	port: process.env.MYSQL_PORT
 });
 
 /*************************************************** FIREWALL ***************************************************/
@@ -194,7 +194,7 @@ function filters(query, req, res, conditions){
 function initializeData(){
 	// Retrieving database schema to insert into data array
 	db.query("show tables", function (err, result, fields) { // Retrieve the name of the tables in the database
-		if (err) throw err;
+		//if (err) throw err;
 		result.forEach(function(element) {
 			var tables = []; // 1 array corresponds to 1 table inside the database
 			db.query("describe " + element.Tables_in_zoo,  function (err, result, fields) { // Retrieve the name of the columns in said table
@@ -214,10 +214,10 @@ function initializeData(){
 /*************************************************** LISTENING ***************************************************/
 app.listen(3000, function () {
 	// Connection to database
-	/*db.connect( function (err) {
+	db.connect( function (err) {
 		if (err) throw err;
 		console.log('Connection to database successful!');
-	});*/
+	});
 	
 	initializeData(); // Initializing the data array with database schema
 	
