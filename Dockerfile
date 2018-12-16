@@ -1,11 +1,7 @@
-FROM node:lts-alpine
+FROM node
 
-WORKDIR /usr/src/api
-
-COPY package*.json ./
-RUN npm install
-
-COPY . .
+RUN npm install express
+RUN npm install mysql
 
 ADD index.js /devops-lab/
 
