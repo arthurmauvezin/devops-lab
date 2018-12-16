@@ -42,11 +42,18 @@ command: RUN CONTAINER AND NAMING IT ACCORDINGLY: docker run --name devops-test 
 When the previous command is executed, we can check with "docker ps" that the container created this way is indeed named "devops-test".
 
 ## 2.8
-question:
+question: I executed the following command to see information about the current running OS in my Docker container: docker exec devops-test cat /etc/os-release
+
 output:
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.8.1
+PRETTY_NAME="Alpine Linux v3.8"
+HOME_URL="http://alpinelinux.org"
+BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
-command:
+command: docker-compose up
 
 ## 3.4
 command:
