@@ -2,3 +2,11 @@ version: '3'
 services:
   my-service:
     image: AppTest
+     ports:
+      - 2368    
+    environment:
+      MYSQL_ROOT_PASSWORD: mdp
+      MYSQL_DATABASE: rdb
+      MYSQL_USER : ruser
+      MYSQL_HOST : rhost
+      
