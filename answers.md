@@ -1,7 +1,7 @@
 # Answers
 
-Lastname: ROTH - THANABALASINGAM
-Firstname: Basile - Senthan
+Lastname: ROTH
+Firstname: Basile
 
 ## 2.2
 command:
