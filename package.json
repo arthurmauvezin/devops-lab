@@ -1,0 +1,25 @@
+{
+  "name": "devops-lab",
+  "version": "1.0.0",
+  "description": "This lab goal is to introduce DevOps concept (Git, Gitflow, Docker,...) seen in [corresponding course](https://github.com/arthurmauvezin/devops-course). It is adapted to fit ece courses.",
+  "main": "thibaudFORMOND_nazimTIMSILINE_WebAPI.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timsline/devops-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timsline/devops-lab/issues"
+  },
+  "homepage": "https://github.com/Timsline/devops-lab#readme"
+}
