@@ -2,13 +2,18 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
+const app_host = process.environment.MYSQL_HOST;
+const app_port = process.environment.MYSQL_PORT; //This one is unused, we use the default MySQL Port anyway (port 3306)
+const app_database = process.environment.MYSQL_DATABASE;
+const app_login = process.environment.MYSQL_LOGIN;
+const app_password = process.environment.MYSQL_PASSWORD;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 var db = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "",
-	database: "project"
+	host: app_host,
+	user: app_login,
+	password: app_password,
+	database: app_database
 });
 
 
@@ -1072,7 +1077,7 @@ app.delete('/users/:id', function(req, res) {
 /*****STARTING SERVICE AND CONNECTION TO DB*****/
 app.listen(3000, function() {
 	db.connect(function(err) {
-		if (err) throw err;
+		//if (err) throw err;
 		console.log('Connection to database successful!');
 	});
 
