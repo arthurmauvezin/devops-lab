@@ -7,10 +7,10 @@ const app = express(); // pour express
 
 app.use(bodyParser.urlencoded({ extended: true })); // Initialisation
 
-const host = process.environment.MYSQL_HOST;
-const port = process.environment.MYSQL_PORT;
+const host     = process.environment.MYSQL_HOST;
+const port     = process.environment.MYSQL_PORT;
 const database = process.environment.MYSQL_DATABASE;
-const login = process.environment.MYSQL_USER;
+const login    = process.environment.MYSQL_USER;
 const password = process.environment.MYSQL_PASSWORD;
 
 // Connection (ici paramètres pour Xamp)
