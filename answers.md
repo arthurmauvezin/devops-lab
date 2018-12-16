@@ -7,8 +7,9 @@ Firstname: Ivan
 command:docker run node-app
 
 ## 2.3
-question:
-command:
+question: The port is not open so we have to open it
+command: docker run -d --expose 3000 node-app
+
 
 ## 2.5
 question:
