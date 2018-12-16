@@ -11,8 +11,10 @@ docker build -t app .
 command: docker run app
 
 ## 2.3
-question: The project is only running in the image that we have created and not on our computer, where Postman is.
-command:
+question: The project is only running in the image that we have created and not on our computer, where Postman is and the ports are not linked.
+command:  docker run -d -p 80:3000 app
+
+docker run app -e MYSQL_HOST="localhost" MYSQL_USER="root" MYSQL_PASSWORD="" MYSQL_DATABASE="zoo" MYSQL_PORT= "3306"
 
 ## 2.5
 question:
