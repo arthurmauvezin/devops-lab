@@ -26,18 +26,18 @@ command:docker start -a -i e57405953605
 
 
 ## 2.7
-question:
-question:
-command:
+question: you can see the status of the container in one of the columns
+question: the name is serene_banzai
+command: docker ps -a
 
-command:
+command: docker rename serene_banzai container_node_app
 
 ## 2.8
 question:
 output:
 
 ## 3.1
-command:
+command: docker-compose build docker run bbe9dfd8dc06
 
 ## 3.4
 command:
