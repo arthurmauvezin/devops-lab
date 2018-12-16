@@ -16,26 +16,26 @@ command: docker run -P app
 command: docker run -P -e MYSQL_HOST=localhost -e MYSQL_PORT=3306 -e MYSQL_USER=root -e MYSQL_PASSWORD="" -e MYSQL_DATABASE=zoo app
 
 ## 2.5
-question: we can tag the app with the remote name ("zoo"). then we can push it afterward to egglestron/zoo
+question: we can tag the app with the remote name ("zoo"). then we can push it afterward to loeurrich/zoo
 command:
 docker login
 docker tag app zoo
-docker push egglestron/zoo
+docker push loeurrich/zoo
 
 ## 2.6
 command: docker system prune
 
 commands: 
-docker pull egglestron/zoo
-docker create egglestron/zoo
-docker run egglestron/zoo
+docker pull loeurrich/zoo
+docker create loeurrich/zoo
+docker run loeurrich/zoo
 
 command: docker ps
 
 output: 
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                        PORTS                     NAMES
-fcf9b525d387        egglestron/zoo      "/bin/sh -c 'node /r…"   40 seconds ago      Up 45 seconds                 3000/tcp                  thirsty_jepsen
-45ff8001f8c7        egglestron/zoo      "/bin/sh -c 'node /r…"   49 seconds ago      Created                                                 thirsty_albattani
+fcf9b525d387        loeurrich/zoo      "/bin/sh -c 'node /r…"   40 seconds ago      Up 45 seconds                 3000/tcp                  thirsty_jepsen
+45ff8001f8c7        loeurrich/zoo      "/bin/sh -c 'node /r…"   49 seconds ago      Created                                                 thirsty_albattani
 
 ## 2.7
 question:
