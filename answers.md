@@ -8,8 +8,7 @@ command:
 docker build -t app .
 docker run --name api app
 execute sudo docker rm api to remove the preceding container api, so the new one can still be called api
-output : 
-Successfully built IMAGE_ID
+output : Successfully built IMAGE_ID
 
 ## 2.3
 question: The probem is that the port are not opened on the docker side so it can't connect with the rest of the application on the inside. To resolve this we add EXPOSE 3000 and EXPOSE 3306 to our Dockerfile
@@ -53,9 +52,9 @@ HOME_URL="http://alpinelinux.org"
 BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
-command:
+command: docker-compose up
 
 ## 3.4
-command:
-command:
+command: docker-compose -d up
+command: docker-compose logs zoo
 

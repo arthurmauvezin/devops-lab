@@ -16,14 +16,14 @@ var db = mysql.createConnection({
 
 // Listening
 app.listen(3000, function() {
-/*	db.connect(function(err) {
+	db.connect(function(err) {
 		if(err) {
 			console.log(err);
 			throw err;
 		}
 		console.log('Connection to database successful');
 	});
-*/
+
 	console.log('Zoo app listening on port 3000!');
 });
 
