@@ -1,26 +1,24 @@
 # Answers
 
-Lastname: Epaulard
-Firstname: Alannah
+Lastname: Epaulard & Charles
+Firstname: Alannah & Gael
 
 ## 2.2
-command:
+command: command sur linux: docker build ./ --tag=devops_lab
+docker run devops_lab
 
 ## 2.3
-question:
-command:
+question:Le port est fermé
+command: docker run -p 3000:3000 devops_lab
 
 ## 2.5
 question:
-command:
+command:docker built -t Alannn/devopslab:test
+docker push Alannn:devopslab:test
 
 ## 2.6
-command:
-
-question:
-command:
-
-command:
+command:sudo docker rmi $(docker images -q)
+docker run -p 3000:3000 Alannn/devopslab
 
 ## 2.7
 question:
