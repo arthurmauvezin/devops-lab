@@ -13,8 +13,9 @@ Project Web - 2018/2019
 ///****************connect to database**************
 const express = require('express');
 const mysql = require('mysql');
-const bodyParser = require('body-parser');
 const app = express();
+const bodyParser = require('body-parser');
+
 const t_host = process.environment.MYSQL_HOST;
 const t_port = process.environment.MYSQL_PORT;
 const t_database = process.environment.MYSQL_DATABASE;
