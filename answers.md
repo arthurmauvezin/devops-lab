@@ -1,10 +1,14 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: GUERMOND
+Firstname: Augustin
 
 ## 2.2
-command:
+command: 
+git clone https://github.com/AuGGuermond/devops-lab.git   ,
+docker build -t dockerimg .   ,
+docker run dockerimg   ,
+
 
 ## 2.3
 question:
