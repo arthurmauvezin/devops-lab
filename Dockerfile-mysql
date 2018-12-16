@@ -1,3 +1,7 @@
 FROM mysql:latest
 
+WORKDIR /app
+
+COPY project.sql /app
+
 ENV MYSQL_ROOT_PASSWORD=root
