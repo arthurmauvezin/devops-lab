@@ -14,7 +14,7 @@ command:  docker -i --expose:portNumber //with portNumber = port we open
 ## 2.5
 question: The reason is that the "docker push" uses the tag to identify the repository where it is supposed to push the image
 
-command: docker login //giving my logs
+commands: docker login //giving my logs
 
 docker tag appp myNameAccount/devops_lab //with myNameAccount our docker hub ID AND devops_lab the docker hub repository name
 
@@ -25,6 +25,7 @@ command:docker system prune -a //delete all images created from the start of the
 
 question:	
 Using --net=host permits the container to be able to reach localhost on the computer (the conainer having its own network by default)
+
 command:  docker run myNameAccount/devops_lab
 
 command:  docker start -d --net=host dreamy_pare //name found in the column "NAMES" and associated to the container previously created
