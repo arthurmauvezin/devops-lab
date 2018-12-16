@@ -9,7 +9,7 @@ RUN npm install
 COPY . /app
 
 #sets environement variables
-ENV MYSQL_HOST '172.17.0.1/16'
+ENV MYSQL_HOST 'localhost'
 ENV MYSQL_PORT '3306'
 ENV MYSQL_DATABASE 'zoo'
 ENV MYSQL_USER 'root'
