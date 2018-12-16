@@ -13,13 +13,14 @@ command: docker run -d --expose 3000 node-app
 
 ## 2.5
 question: I didn't had problems uploading my image
-command:
+command:docker tag bbe9dfd8dc06 ivanvazquezl/node-app:firsttag
+		docker push ivanvazquezl/node-app
 
 ## 2.6
-command:
+command: docker rmi -f bbe9dfd8dc06
 
 question:
-command:
+command:docker pull ivanvazquezl/node-app:firsttag
 
 command:
 
