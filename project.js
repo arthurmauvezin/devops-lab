@@ -3,12 +3,20 @@ const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
 
+//Declaration of environment variables
+
+const duckerHost = process.environment.MYSQL_HOST;
+const duckerPort = process.environment.MYSQL_PORT;
+const duckerDataBase = process.environment.MYSQL_DATABASE;
+const duckerUser = process.environment.MYSQL_USER;
+const duckerPassword = process.environment.MYSQL_PASSWORD;
+
 app.use(bodyParser.urlencoded({ extended: true }));
 var db = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "",
-	database: "project"
+	host: duckerHost,
+	user: duckerUser,
+	password: duckerPassword,
+	database: duckerDataBase
 });
 
 
@@ -1070,7 +1078,7 @@ app.delete('/users/:id', function(req, res) {
 /*****************************/
 
 /*****STARTING SERVICE AND CONNECTION TO DB*****/
-app.listen(3000, function() {
+app.listen(duckerPort, function() {
 	db.connect(function(err) {
 		if (err) throw err;
 		console.log('Connection to database successful!');
