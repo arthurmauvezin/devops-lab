@@ -1,0 +1,13 @@
+version: '3'
+services:
+  zoo:
+    build: .
+    ports:
+     - "3000:3000"
+    environment:
+     - MYSQL_HOST='localhost'
+     - MYSQL_USER='root'
+     - MYSQL_PASSWORD=''
+     - MYSQL_DATABASE='zoo'
+     - MYSQL_PORT='3306'
+    image: "fc2313/devops-lab:zoo"
