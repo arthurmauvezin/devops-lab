@@ -7,7 +7,7 @@ Firstname: Louis
 command: sudo docker run app
 
 ## 2.3
-question: Ports are not opened
+question: Ports are not opened so no access
 command: sudo docker run -p 3000:3000 -td app
 
 ## 2.5
@@ -30,7 +30,14 @@ command: sudo docker ps -a
 command: sudo docker rename serene_wescoff cont_app
 
 ## 2.8
-
+question: 
+Linux output: 
+NAME="Alpine Linux" 
+ID=alpine 
+VERSION_ID=3.8.1 
+PRETTY_NAME="Alpine Linux v3.8" 
+HOME_URL="http://alpinelinux.org" 
+BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
 command: command: sudo docker-compose up
