@@ -1,9 +1,11 @@
 FROM node:8
-EXPOSE 3306
 
-COPY index.js /root/
+COPY package-lock.json ./
+COPY index.js ./
 
 RUN npm install express
 RUN npm install mysql
 
-CMD node /root/index.js
+EXPOSE 3000
+
+CMD ["node","index.js"]
