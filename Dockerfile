@@ -1,23 +1,16 @@
-#FROM node:8.11.4-alpine
-FROM node:alpine
-#FROM alpine:latest
+#FROM node:alpine
+FROM alpine:latest
 WORKDIR /app
 
-#RUN apt-get update
-#RUN apt-get install nodejs
-#RUN apt-get install npm
+COPY zooAT.js /app
 
-
-COPY zooAT.js ./
-
-RUN apk add nodejs-current nodejs-npm
+#RUN apk add nodejs-current nodejs-npm
 RUN npm install express
 RUN npm install mysql
+#RUN npm install body-parser
 
-
-
-#ENV MYSQL_HOST=host.docker.internal
-ENV MYSQL_HOST=10.0.75.1
+#ENV MYSQL_HOST=10.75.0.1
+ENV MYSQL_HOST=host.docker.internal
 ENV MYSQL_USER=root
 ENV MYSQL_PASSWORD=
 ENV MYSQL_DATABASE=project
@@ -25,8 +18,8 @@ ENV MYSQL_PORT=3306
 
 
 
-#MOUNT ["/etc/mysql","/var/lib/mysql"] 
-#EXPOSE 3306
 EXPOSE 3000
-CMD node zooAT.js
+EXPOSE 3306
+
+CMD ["node", "zooAT.js"]
 
