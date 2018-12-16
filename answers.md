@@ -33,7 +33,7 @@ command: docker ps
 command: docker tag nicholasthelouche/devops-lab zoo_wep_api
 
 ## 2.8
-question: docker run -it nicholasthelouche/devops-lab /bin/bash
+question: Debian 9
 
 output:
 PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
