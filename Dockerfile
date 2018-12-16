@@ -1,5 +1,7 @@
-FROM node:8.11.4-alpine
+#FROM node:8.11.4-alpine
 #WORKDIR /app
+FROM node:8
+
 
 #RUN apt-get update
 #RUN apt-get install nodejs
@@ -10,5 +12,5 @@ RUN npm install mysql
 COPY zooAT.js ./
 
 #MOUNT ["/etc/mysql","/var/lib/mysql"] 
-EXPOSE 3306
+#EXPOSE 3306
 #CMD node zooAT.js
