@@ -27,7 +27,7 @@ question:
 question:
 command: docker ps -l
 
-command:
+command: 
 
 ## 2.8
 question:
