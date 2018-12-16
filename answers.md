@@ -42,7 +42,7 @@ command:
 
 sudo docker run rawad97/devops_lab
 
-sudo docker ps -a yields:
+sudo docker ps -a:
 CONTAINER ID        IMAGE                     COMMAND                  CREATED             STATUS              PORTS               NAMES
 b6035a136e93        rawad97/devops_lab   "node /root/index.js"       8 minutes ago       Up 2 seconds                          goofy_euler
 
