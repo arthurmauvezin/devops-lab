@@ -9,7 +9,7 @@ or       docker run -d app    on Docker Playground
 
 ## 2.3
 question: Because the app created with docker launch is own localhost, and ports are not opened. "the container uses a different network namespace than the host (the Docker machine), 127.0.0.1 in the container is not equal to 127.0.0.1 on the host. 
-command: sudo docker run -p 3000:3000 app 
+command: docker run -p 3000:3000 app 
 
 ## 2.5
 question: We first need to tag the image before pushing it to the repository 
