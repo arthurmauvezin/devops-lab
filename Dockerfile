@@ -1,6 +1,6 @@
 FROM node
 
-WORKDIR /root/
+WORKDIR /root/devops-lab
 
 RUN npm install express mysql
 
@@ -13,7 +13,7 @@ ENV MYSQL_PORT=3306
 EXPOSE 3000
 EXPOSE 3306
 
-COPY . /root/
+COPY . /root/devops-lab
 
 
 CMD node zoo.
