@@ -1,6 +1,6 @@
 FROM node
 
-COPY index.js
+COPY index.js /
 
 RUN npm install express mysql
 
