@@ -12,6 +12,7 @@ command: sudo docker run -p 3000:3000 test.js
 ## 2.5
 question:
 command: sudo docker tag test.js aminecrime/devops_lab
+sudo docker push aminecrime/devops_lab
 
 ## 2.6
 command:
