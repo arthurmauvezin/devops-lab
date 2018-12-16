@@ -1,9 +1,12 @@
-version: '3.1'
+version: '3'
 services:
-  db:
-    image: arthurmauvezin/docker-labs-mysql:1.0
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
+  my-service: 
+    image: sagake/devops-lab
+    ports:
+      - 3000
+      - 8080
     environment:
-      MYSQL_ROOT_PASSWORD: example
-      MYSQL_DATABASE: project
+      MYSQL_HOST: app_host
+      MYSQL_DATABASE: app_database
+      MYSQL_LOGIN: app_login
+      MYSQL_PASSWORD: app_password
