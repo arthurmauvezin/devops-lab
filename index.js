@@ -2,6 +2,17 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
+const dhost = process.env.MYSQL_HOST;
+const dport = process.env.MYSQL_PORT;
+const ddatabase = process.env.MYSQL_DATABASE;
+const dlogin = process.env.MYSQL_LOGIN;
+const dpassword = process.env.MYSQL_PASSWORD;
+
+//use the body-parser library in our application
+app.use(bodyParser.urlencoded({extended: true}));
+
+//connection to the database
+
 
 
 app.use(bodyParser.json());
@@ -10,11 +21,16 @@ app.use(bodyParser.urlencoded({
 }));
 
 var db = mysql.createConnection({
-    host: "localhost",
+   /* host: "localhost",
     user: "root",
     password: "root",
     database: "project",
-    port: "8889"
+    port: "8889",*/
+    host: dhost,
+    user: dlogin,
+    password: dpassword,
+    database: ddatabase,
+    port: dport
 });
 
 //firewall
@@ -25,6 +41,7 @@ app.use(function(req, res,next){
         //var query="SELECT * FROM users WHERE apikey = '"+key+"'";
         var query="SELECT * FROM users WHERE apikey = '"+key+"'";
         db.query(query,function (err,result,fields) {
+            console.log(key);
             if(err) throw err;
             if(result.length>0){
                 next();
@@ -1295,9 +1312,9 @@ app.post('/register', function (req, res) {
 ////////////////fin jour restant nourriture//////////////////////////
 
 app.listen(3000, function () {
-    db.connect(function (err) {
-        if (err) throw err;
-        console.log('Connection to database successful!');
-    });
+    // db.connect(function (err) {
+    //     if (err) throw err;
+    //     console.log('Connection to database successful!');
+    // });
     console.log('Example app listening on port 3000');
 });
