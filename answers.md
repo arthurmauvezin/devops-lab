@@ -3,11 +3,15 @@
 Lastname: Schmitt
 Firstname: Camille
 
+git clone https://github.com/camilleschmitt/devops-lab.git
+docker build -t app .
+
+
 ## 2.2
 command: docker run app
 
 ## 2.3
-question: 
+question: The project is only running in the image that we have created and not on our computer, where Postman is.
 command:
 
 ## 2.5
