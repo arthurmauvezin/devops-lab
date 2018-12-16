@@ -30,7 +30,7 @@ command: docker ps
 command: docker run -d --name api francoisren/devops_lab
 
 ## 2.8
-question: The OS from the container is Alpine linux, we use the command "docker exec api cat /etc/OS-release" to get the output
+question: The OS from the container is Alpine linux, we use the command "docker exec api cat /etc/OS-release" to get the output.
 output: 
 NAME="Alpine Linux"
 ID=alpine
