@@ -5,15 +5,19 @@ const bodyParser = require('body-parser');
 const app = express();
 
 
+const my_host = process.environment.MYSQL_HOST;
+const my_port = process.environment.MYSQL_PORT;
+const my_database = process.environment.MYSQL_DATABASE;
+const my_login = process.environment.MYSQL_LOGIN;
+const my_password = process.environment.MYSQL_PASSWORD;
 
-// Connect to the Database "project"
-var db = mysql.createConnection(
-{
-	host: "localhost",
-	user: "root",
-	password: "root",
-	database: "project",
-	port: "8889"
+
+ var db = mysql.createConnection({
+    host: my_host,
+    user: my_login,
+    password: my_password,
+    database: my_database,
+    port: my_port
 });
 
 
