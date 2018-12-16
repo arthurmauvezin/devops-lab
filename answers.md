@@ -19,10 +19,11 @@ command:docker tag bbe9dfd8dc06 ivanvazquezl/node-app:firsttag
 ## 2.6
 command: docker rmi -f bbe9dfd8dc06
 
-question:
+question:It asked to login to dockerhub 
 command:docker pull ivanvazquezl/node-app:firsttag
 
-command:
+command:docker start -a -i e57405953605
+
 
 ## 2.7
 question:
