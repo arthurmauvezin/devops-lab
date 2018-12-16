@@ -32,7 +32,7 @@ Just having some difficulties to run the img, there are some errors in js, comin
 ## 2.7
 question:
 question:
-Since the img didnt run, it cant go into a container but there is the command to show coantainer details, to show container ID PORTS NAME and the command to rename
+Since the img didnt run, it cant go into a container but there is the command to show coantainer details, to show container ID PORTS NAME and the command to rename the container
 command: docker ps  
 
 command: docker rename
