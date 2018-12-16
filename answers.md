@@ -60,5 +60,6 @@ BUG_REPORT_URL="http://bugs.alpinelinux.org"
 command: docker-compose up
 
 ## 3.4
-command:
-command:
+command: docker-compose up -d
+
+command: docker-compose logs
