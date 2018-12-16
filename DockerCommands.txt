@@ -1,3 +1,4 @@
 git clone https://github.com/CorentinCOSTE/devops-lab ;
-cd devops-lab/; docker build -t app . ;
-docker run -p 4000:80 app
+cd devops-lab/node; 
+docker build -t app . ;
+docker run -p 4000:80 app;
