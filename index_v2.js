@@ -15,18 +15,20 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
-app.use(bodyParser.urlencoded({ extended: true }));
+const t_host = process.environment.MYSQL_HOST;
+const t_port = process.environment.MYSQL_PORT;
+const t_database = process.environment.MYSQL_DATABASE;
+const t_login = process.environment.MYSQL_LOGIN;
+const t_password = process.environment.MYSQL_PASSWORD;
+
 var db = mysql.createConnection({
-host: "localhost",
-user: "root",
-password: "",
-database: "zoo"
-const rhost = process.environment.MYSQL_HOST;
-const rport = process.environment.MYSQL_PORT;
-const rdatabase = process.environment.MYSQL_DATABASE;
-const rlogin = process.environment.MYSQL_LOGIN;
-const rpassword = process.environment.MYSQL_PASSWORD;
+host: t_host,
+user: t_login,
+password: t_password,
+database: t_database
 });
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 ///FIREWALL
