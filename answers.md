@@ -17,7 +17,7 @@ command: sudo docker push alienorrouaix/lab:latest
 ## 2.6
 command: sudo docker system prune -a
 
-question:
+question: getting back the image to then start a container
 command: docker pull alienorrouaix/lab
 docker create alienorrouaix/lab
 
@@ -25,14 +25,14 @@ command:
  sudo docker run -d --net=host quizzical_germain
 
 ## 2.7
-question:
+question: containers names, id, status, date of creation are displaying
 question:
 command: sudo docker ps -a
 
 command:
 sudo docker rename quizzical_germain api
 ## 2.8
-question:
+question: switching to interactive mode 
 output:
 PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
 NAME="Debian GNU/Linux"
