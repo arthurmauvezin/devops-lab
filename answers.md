@@ -33,11 +33,13 @@ command: RUN IN DETACHED MODE: docker run --detach mmetharam/devops-lab:test1
 question: To check whether the container was started correctly, we can look at the list of currently running containers with the command "docker ps", ordered by their container ID.
 Before running that command, it should be noted when you run something in detached mode, the console returns its container ID. To check whether the container we created started correctly, we just have to find its container ID in the previous list and check its status.
 
-question:
+question: According to information returned by the "docker ps" command, my container is named "heuristic_blackwell" at this stage.
 
 command: CHECK WHETHER THE DOCKER IS CURRENTLY RUNNING CORRECTLY IN DETACHED MODE: docker ps
 
-command:
+command: RUN CONTAINER AND NAMING IT ACCORDINGLY: docker run --name devops-test --detach mmetharam/devops-lab:test1
+
+When the previous command is executed, we can check with "docker ps" that the container created this way is indeed named "devops-test".
 
 ## 2.8
 question:
