@@ -35,15 +35,22 @@ question : detached mode with option -d from man docker run
 command: docker run -d mallocgab/zoo_api
 
 ## 2.7
-question:
-question:
-command:
+question: When we are starting the container in detached mode it prints the new container ID ont the terminal. We can see that it is running since it's status is : Up X seconds, and that its name is "compassionate_hertz".
+command: docker ps -a
 
-command:
+question: To set a name we have to use the --name option when running the container
+command: docker run -d --name zoo_api app
 
 ## 2.8
-question:
-output:
+question: To be able to use stdin we need option -i and for a pseudo-tty then use -t
+command: docker run -it api sh
+output: 3.8.1
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.8.1
+PRETTY_NAME="Alpine Linux v3.8"
+HOME_URL="http://alpinelinux.org"
+BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
 command:
@@ -51,3 +58,4 @@ command:
 ## 3.4
 command:
 command:
+
