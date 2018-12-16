@@ -1,14 +1,17 @@
 # Answers
 
-Lastname: Toquebiau
-Firstname: Maxime
+Lastname1: Toquebiau
+Firstname1: Maxime
+
+Lastname2: Guillermou
+Firstname2: Tom
 
 ## 2.2
 command: docker build -t app .
 
 ## 2.3
-question: 
-command:
+question: The app fails at first. We need to specify the right port. Therefore we expose the port 3000.
+command: EXPOSE 3000
 
 ## 2.5
 question:
