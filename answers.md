@@ -1,17 +1,17 @@
 # Answers
 
 Lastname: FRITZ
-Firstname: Léo
+Firstname: LÃ©o
 
 ## 2.2
-command:
+command: docker run project
 
 ## 2.3
-question:
-command:
+question: It's not working because Docker port and my database port aren't liked. So they can discuss.
+command: docker run -p 80:3000 project
 
 ## 2.5
-question:
+question: 
 command:
 
 ## 2.6
