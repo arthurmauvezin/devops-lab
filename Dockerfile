@@ -4,7 +4,7 @@ COPY package-lock.json /app
 RUN npm install express
 RUN npm install mysql
 COPY . /app
-ENV MYSQL_HOST=host.docker.internal
+ENV MYSQL_HOST=localhost
 ENV MYSQL_USER=root
 ENV MYSQL_PASSWORD=
 ENV MYSQL_DATABASE=zoo
