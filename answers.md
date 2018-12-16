@@ -18,32 +18,35 @@ question: The port is not opened
 command:  $ docker run -i -expose:3000 app
 
 ## 2.5
-question:
+question: We first need to log in order to push then we need to set the tag
 command: $ docker login
+		 $ docker tag myapp mf160178/devops-lab
 		 $ docker push mf160178/devops-lab
 
 ## 2.6
-command:
+command: $ docker system prune -a
 
-question:
-command:
+question:$ docker pull mf160178/devops_lab
+command: $ docker create mf160178/devops_lab
 
-command:
+command: $ docker run mf160178/devops-lab
 
 ## 2.7
-question:
-question:
-command:
+question: $ docker ps -a
+question: zen_hopper
+command: $ docker ps -a
 
-command:
+command: $ docker start -d --name api mf160178/devops-lab
 
 ## 2.8
-question:
+question: docker run -it mf160178/devops_lab /bin/bash
 output:
+		PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
+		NAME="Debian GNU/Linux"
 
 ## 3.1
-command:
+command: docker-compose up
 
 ## 3.4
-command:
-command:
+command: docker-compose up -d
+command: docker-compose logs
