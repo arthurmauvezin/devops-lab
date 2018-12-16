@@ -24,7 +24,7 @@ command:
 - Delete all images on computer: docker rmi $(docker images -q)
 //First I had to stop all running container before killing them with the command docker: rm $(docker ps -a -q)
 
-question: As we deleted all images locally and are disconnected to our Docker Hub account, an error occured as it coulnd't find any image on which build the container. So we have to connect to our Docker Hub account and pull the image we just pushed. Then it will be able to find the image on wchich build our container.
+question: As we deleted all local images and are disconnected to our Docker Hub account, an error occured as it couldn't find any image on which build the container. So we have to connect to our Docker Hub account and pull the image we just pushed. Then it will be able to find the image on which build our container.
 command:
 - Run container from Docker Hub: docker run antoinebattagliotti/devops-lab:webService
 
