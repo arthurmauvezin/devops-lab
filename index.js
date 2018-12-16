@@ -923,7 +923,7 @@ app.get('/food-stats', function(req, res) {
 
 app.listen( 3000 ,  function () { db.connect( function (err) {
 	/*if  (err)  throw  err;
-	console .log( 'Connection to database successful!' );*/
+	console .log( 'Connection to database successful!' ); */
 }); 
 console .log( 'Example app listening on port 3000!' );
 });
