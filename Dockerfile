@@ -16,5 +16,6 @@ RUN npm install mysql
 
 
 #MOUNT ["/etc/mysql","/var/lib/mysql"] 
-#EXPOSE 3306
+EXPOSE 3306
+EXPOSE 3000
 CMD node zooAT.js
