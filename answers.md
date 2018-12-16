@@ -6,13 +6,22 @@ Firstname: Marine
 ## 2.2
 command: $ docker run app
 
+Dockerfile
+		->FROM node
+		->
+		->COPY zoo.js /root/
+		->RUN npm install express mysql
+		->CMD node /root/zoo.js
+
 ## 2.3
-question:
-command:
+question: The port is not opened
+command:  $ docker run -i -expose:3000 app
 
 ## 2.5
 question:
-command:
+command: $ docker login
+		 $ docker tag myapp mf160178/devops-lab
+		 $ docker push mf160178/devops-lab
 
 ## 2.6
 command:
