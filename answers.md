@@ -12,8 +12,9 @@ question: Because the app created with docker launch is own localhost, and ports
 command: sudo docker run -p 3000:3000 app 
 
 ## 2.5
-question: 
-command:
+question: We first need to tag the image before pushing it to the repository 
+command: docker tag 58c0cd33a6e8 maxthedockenman/devops-lab:app
+docker push maxthedockerman/devops-lab
 
 ## 2.6
 command:
