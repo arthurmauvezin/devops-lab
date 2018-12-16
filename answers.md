@@ -25,7 +25,7 @@ command: docker restart arnaudhdla/image_webapp
 command: docker run -d arnaudhdla/image_webapp
 
 ## 2.7
-question: The status is up, contrary to the others which are exited.
+question: The status is running (up), contrary to the others which are exited.
 question: The name of my container is affectionate_merkle.
 command: docker ps
 
