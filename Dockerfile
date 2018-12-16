@@ -16,4 +16,4 @@ EXPOSE 3306
 COPY . /root/devops-lab
 
 
-CMD node index.js
+CMD node zoo.js
