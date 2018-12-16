@@ -25,7 +25,7 @@ command: docker run myapp
 ## 2.7
 question:
 question:
-command:
+command: docker ps -l
 
 command:
 
