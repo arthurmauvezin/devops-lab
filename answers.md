@@ -7,7 +7,7 @@ command: sudo docker run app
 
 ## 2.3
 question: Ports are not opened
-command: sudo docker run -p 3000:3000
+command: sudo docker run -p 3000:3000 test.js
 
 ## 2.5
 question:
