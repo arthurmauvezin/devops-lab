@@ -4,28 +4,28 @@ Lastname: Valran
 Firstname: Adrien
 
 ## 2.2
-command:
+command: $ docker run api
 
 ## 2.3
-question:
-command:
+question: The image doesn't know in which port it has to connect
+command: $ docker run -p 3000:3000 api
 
 ## 2.5
-question:
-command:
+question: An image doesn't exist locally with the tag. We have to rename the image in order to match with the repositoty.
+command: $ docker push Ilwyrr/test:testapi
 
 ## 2.6
-command:
+command: docker image prune -all
 
-question:
-command:
+question: Docker has to download the given image from the repository.
+command: $ docker run Ilwyrr/test:testapi
 
-command:
+command: docker run --detach Ilwyrr/test:testapi
 
 ## 2.7
+question: We can get the status of containers with the docker -ps command
 question:
-question:
-command:
+command: docker ps -a
 
 command:
 
