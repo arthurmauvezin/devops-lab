@@ -39,8 +39,8 @@ HOME_URL="http://alpinelinux.org"
 BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
-command:
+command: sudo docker-compose up
 
 ## 3.4
-command:
-command:
+command: docker-compose up -d
+command: docker-compose run
