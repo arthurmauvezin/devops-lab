@@ -46,11 +46,20 @@ sudo docker rename objective_gates js_api
 
 ## 2.8
 question:
+The name of the OS of our container is : Alpine Linux
 output:
-
+3.8.1
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.8.1
+PRETTY_NAME="Alpine Linux v3.8"
+HOME_URL="http://alpinelinux.org"
+BUG_REPORT_URL="http://bugs.alpinelinux.org"
 ## 3.1
 command:
-
+sudo docker-compose up
 ## 3.4
 command:
+sudo docker-compose up -d
 command:
+sudo docker-compose logs
