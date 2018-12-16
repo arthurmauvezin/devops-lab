@@ -18,5 +18,6 @@ ENV MYSQL_PASSWORD ''
 COPY . .
 #
 EXPOSE 3000
+EXPOSE 3306
 
 CMD node project.js
