@@ -1,0 +1,7 @@
+#Use the offial node from Dockerhub FROM node
+
+COPY index.js/
+
+RUN npm install express mysql body-parser
+
+CMD node index.js
