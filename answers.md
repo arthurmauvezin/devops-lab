@@ -17,9 +17,11 @@ il faut ouvrir le port dans le dockerfile
 command: EXPOSE 3000 
 
 ## 2.5
-question:
-command:
-
+question: Il se connecter à son dockerhub pour pouvoir push. Il fau ensuite changer
+le nom de l'image pour matcher avec son repository
+command: docker login
+docker tag node-docker-tutorial:latest mgautierm/devop-labgautier:firsttry
+docker push mgautierm/devop-labgautier:firsttry
 ## 2.6
 command:
 
