@@ -20,10 +20,10 @@ docker push victormoliner/devops-lab
 command: docker system prune -a
 
 question: we pull the image and then we start the container 
-command: docker create victormoliner/devops_lab
+command: docker create victormoliner/devops-lab
 docker pull victormoliner/devops-lab
 
-command: docker run --detach r/devops_lab
+command: docker run --detach victormoliner/devops-lab
 
 ## 2.7
 question: "docker ps -a" allows to know the status of containers created
