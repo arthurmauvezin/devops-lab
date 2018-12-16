@@ -3,7 +3,7 @@ Lastname: Mina
 Firstname: Adrien
 
 ## 2.2
-command:
+command: sudo docker run app
 
 ## 2.3
 question:
