@@ -8,19 +8,22 @@ services:
       - 3000:3000
     environment:
       - NODE_ENV=production
-      - MYSQL_HOST=mysql:3306
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=
     depends_on:
       - mysql
   mysql:
-    image: mysql:5.7
+    image: arthurmauvezin/docker-labs-mysql:latest
     container_name: mysql
+    command: --default-authentication-plugin=mysql_native_password
     restart: always
     volumes:
       - db_data:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=zoo
-      - MYSQL_USER=zoo
-      - MYSQL_PASSWORD=zookeeper
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=
 volumes:
   db_data: {}
