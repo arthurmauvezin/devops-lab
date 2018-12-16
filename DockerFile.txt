@@ -1,7 +1,7 @@
-cd /c/Users/litou/OneDrive/Bureau/tpdocker/devops-lab
-npm i -g n
-n latest
-mkdir test && cd test
-npm init -y
-npm i -S express
-node index.js
+FROM node:8.14.0
+COPY index.js ./
+RUN apk add nodejs-current nodejs-npm
+RUN npm install express
+RUN npm install mysql
+EXPOSE 3000
+CMD node index.js

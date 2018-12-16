@@ -4,21 +4,23 @@ Lastname:litou
 Firstname:pierre
 
 ## 2.2
-command:
+command:docker run testapp
 
 ## 2.3
-question:
-command:
+question:the port aren't open 
+command: docker run -p 3000:3000 app
 
 ## 2.5
-question:
-command:
+question:docker push use the tag to identify the repository althought it must push the image
+command:sudo docker login
+sudo docker tag testing pierrelitou/devops_lab 
+sudo docker push pierrelitou/devops_lab
 
 ## 2.6
-command:
+command:sudo docker system prune -a
 
 question:
-command:
+command:sudo docker run pierrelitou/devops_lab
 
 command:
 
