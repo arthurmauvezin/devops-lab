@@ -1,7 +1,7 @@
 FROM mysql:latest
 
-WORKDIR /app
+WORKDIR /bin/bash
 
-COPY project.sql /app
+COPY project.sql /bin/bash
 
 ENV MYSQL_ROOT_PASSWORD=root
