@@ -52,8 +52,8 @@ HOME_URL="http://alpinelinux.org"
 BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
-command:
+command: docker-compose build
 
 ## 3.4
-command:
-command:
+command: docker-compose run -d
+command:docker logs project

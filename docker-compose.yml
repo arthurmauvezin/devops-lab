@@ -2,3 +2,13 @@ version: '3'
 services:
   my-service:
     image: app
+    build: Dockerfile
+    ports:
+      - "3306:80"
+
+     environment:
+       MYSQL_HOST="localhost"
+       MYSQL_USER="root"
+       MYSQL_PASSWORD=""
+       MYSQL_DATABASE="zoo"
+       MYSQL_PORT="3000"
