@@ -18,7 +18,7 @@ command: docker push package92/projet1:latest
 ## 2.6
 command: sudo docker system prune -a
 
-question:
+question: we pull the image before starting a container 
 command: 
 sudo docker pull package92/projet1
 sudo docker create package92/projet1
@@ -27,14 +27,14 @@ command:
 sudo docker run -d --net=host suspicious_chaplygin
 
 ## 2.7
-question:
+question: it shows containers id, name, status 
 question:
 command: sudo docker ps -a
 
 command:
 sudo docker rename suspicious_chaplygin api
 ## 2.8
-question:
+question: we pass to the interactive mode 
 output:
 MacBook-Air-de-Diego:devops-lab diego1997$ sudo docker run -it package92/projet1 /bin/bash
 root@bfed251b3f35:/# cat /etc/*release
