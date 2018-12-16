@@ -1,13 +1,13 @@
 # Answers
 
-Lastname: Padis & Duchesne
-Firstname: Ana & Gab
+Lastname: Duchesne
+Firstname: Anastasia
 
 ## 2.2
-command:
+command: sudo docker run -it --rm app
 
 ## 2.3
-question:
+question: We get the error "ERR_CONNECTION_REFUSED". We're trying to listen to the wrong ports. Docker is configured to use the default machine, so it sets up its own host.
 command:
 
 ## 2.5
