@@ -19,7 +19,7 @@ ENV MYSQL_PORT=3306
 
 
 EXPOSE 3000
-EXPOSE 3306
+#EXPOSE 3306
 
-CMD ["node", "zooAT.js"]
-
+#CMD ["node", "zooAT.js"]
+CMD node zooAT.js
