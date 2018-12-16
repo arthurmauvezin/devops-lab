@@ -1025,7 +1025,7 @@ app.get('/food-stats', function(req, res) {
 
 
 
-app.listen(3000, function() {
+app.listen(3306, function() {
 	db.connect(function(err) {
 		if (err) throw err;
 		console.log('Connection to database successful!');
