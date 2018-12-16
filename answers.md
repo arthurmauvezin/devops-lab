@@ -4,11 +4,13 @@ Lastname: Moliner
 Firstname: Victor
 
 ## 2.2
-command: docker run app
+command: 
+docker build -t app .
+docker run app
 
 ## 2.3
 question: Our code doesn't work because the port is not open
-command: docker run -i --expose 3000 app
+command: docker run -p -3000:3000 -td app
 
 ## 2.5
 question: We have to be login and to use tag to do the push
