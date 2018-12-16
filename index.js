@@ -3,6 +3,20 @@ const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
 
+const myhost = process.environment.MYSQL_HOST;
+const myport = process.environment.MYSQL_PORT;
+const mydb = process.environment.MYSQL_DATABASE;
+const mylogin = process.environment.MYSQL_LOGIN;
+const mypassword = process.environment.MYSQL_PASSWORD;
+
+var db = mysql.createConnection({
+    host: myhost,
+    user: mylogin,
+    password: mypassword,
+    database: mydb,
+    port: myport
+});
+
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var db = mysql.createConnection({ 
