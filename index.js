@@ -7,11 +7,24 @@ app.use(bodyParser.urlencoded({ extended:true }));
 
 //DB connection
 var db = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "root",
-	database: "zooCorr",
-	port: "3306"
+	host: process.env.MYSQL_HOST,
+	user: process.env.MYSQL_USER,
+	password: process.env.MYSQL_PASSWORD,
+	database: process.env.MYSQL_DATABASE,
+	port : process.env.MYSQL_PORT,
+});
+
+// Listening
+app.listen(3000, function() {
+	db.connect(function(err) {
+		if(err) {
+			console.log(err);
+			throw err;
+		}
+		console.log('Connection to database successful');
+	});
+	
+	console.log('Zoo app listening on port 3000!');
 });
 
 //Check the validity of the apikey
@@ -590,15 +603,4 @@ app.get('/food-stats', function (req, res) {
 
 		res.send(JSON.stringify(days_left));
 	});
-});
-
-
-// Listening
-app.listen(3000, function() {
-	db.connect(function(err) {
-		if(err) throw err;
-		console.log('Connection to database successful');
-	});
-	
-	console.log('Zoo app listening on port 3000!');
 });
