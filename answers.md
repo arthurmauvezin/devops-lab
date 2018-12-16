@@ -21,24 +21,37 @@ command:
 command: docker system prune -a
 
 question:
-command:
+command: 
+	docker pull sagakedon/devops-lab
+	docker create sagakedon/devops-lab
+	docker run sagakedon/devops-lab
 
-command:
+command:docker run -d sagakedon/devops-lab
 
 ## 2.7
-question:
-question:
+question: docker ps -a
+question: The name of my container is agitated_sinoussi
 command:
 
-command:
+command: docker rename agitated_sinoussi webapi
 
 ## 2.8
-question:
-output:
+question: 
+	docker run -it sagakedon/devops-lab /bin/bash
+	cat /etc/*release
+output: 
+	PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
+	NAME="Debian GNU/Linux"
+	VERSION_ID="9"
+	VERSION="9 (stretch)"
+	ID=debian
+	HOME_URL="https://www.debian.org/"
+	SUPPORT_URL="https://www.debian.org/support"
+	BUG_REPORT_URL="https://bugs.debian.org/"
 
 ## 3.1
-command:
+command: docker-compose up
 
 ## 3.4
-command:
-command:
+command: docker-compose up -d
+command: docker-compose logs
