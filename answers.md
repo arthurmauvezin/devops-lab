@@ -23,19 +23,27 @@ command: docker login
 docker tag node-docker-tutorial:latest mgautierm/devop-labgautier:firsttry
 docker push mgautierm/devop-labgautier:firsttry
 ## 2.6
-command:
 
-question:
-command:
+question:Pour delete les images, il faut d'abord delete les containers attachés 
+aux images
 
-command:
+command:docker rm -f $(docker ps -a -q)
+docker rmi -f $(docker images -q)
+
+
+question:On creer un container vide puis on met prend l'image sur dockerhub
+command:docker pull mgautierm/devop-labgautier
+docker create mgautierm/devop-labgautier
+docker run mgautierm/devop-labgautier
+docker ps -a
 
 ## 2.7
-question:
-question:
-command:
+question: Pour voir si le statut des containers on utilise docker ps -a
+question: Pour rename le docker on utilise la fonction rename avec AncienNom
+Nouveaunom
+command: docker ps -a
 
-command:
+command: docker rename dreamy_chandrasekhar hello
 
 ## 2.8
 question:
