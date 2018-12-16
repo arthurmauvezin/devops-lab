@@ -33,18 +33,18 @@ Just having some difficulties to run the img, there are some errors in js, comin
 ## 2.7
 question:
 question:
-Since the img didnt run, it cant go into a container but there is the command to show coantainer details
-command: docker ps to show container ID PORTS NAME  
+Since the img didnt run, it cant go into a container but there is the command to show coantainer details, to show container ID PORTS NAME and the command to rename
+command: docker ps  
 
-command:
+command: docker rename
 
 ## 2.8
 question:
 output:
 
 ## 3.1
-command:
+command:docker-compose up
 
 ## 3.4
-command:
-command:
+command:docker-compose -d up
+command:docker_compose logs
