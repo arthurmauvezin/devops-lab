@@ -33,7 +33,12 @@ command: sudo docker start -d --name docker_zoo_api Acouvreur97/devops_lab
 
 ## 2.8
 question: sudo docker run -it Acouvreur97/devops_lab /bin/bash 
-output: 
+output: NAME:"ALPINE LINUX"
+ID=alpine
+VERSION_ID=3.8.1
+PRETTY_NAME="Alpine Linux v3.8"
+HOME_URL="http://alpinelinux.org"
+BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
 command: sudo docker-compose up
