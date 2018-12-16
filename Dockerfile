@@ -17,7 +17,7 @@ RUN npm install mysql
 
 
 #ENV MYSQL_HOST=host.docker.internal
-ENV MYSQL_HOST=localhost
+ENV MYSQL_HOST=10.0.75.1
 ENV MYSQL_USER=root
 ENV MYSQL_PASSWORD=
 ENV MYSQL_DATABASE=project
