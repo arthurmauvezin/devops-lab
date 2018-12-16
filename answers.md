@@ -1,32 +1,32 @@
 # Answers
 
-Lastname: bahri
-Firstname: skander
+Lastname: Bahri
+Firstname: Skander
 ## 2.2
-command:
-
+command:sudo docker run test
 ## 2.3
-question:
-command:
+question:port fermé,il faut en ouvrir un 
+command:sudo docker run -i --expose:PortNumber test 
 
 ## 2.5
-question:
-command:
+question: reconstruction de l'image 
+command: docker tag 61789455a924  sk11199/devops-lab
+docker push sk11199/devops_lab
 
 ## 2.6
-command:
+command: sudo docker system prune -a
 
-question:
-command:
+question: 
+command:docker run sk11199/devops-lab:test
 
-command:
+command: sudo docker create sk11199/devops-lab
 
 ## 2.7
 question:
 question:
-command:
+command: sudo docker ps -a
 
-command:
+command: docker ps -a
 
 ## 2.8
 question:
