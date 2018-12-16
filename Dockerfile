@@ -1,3 +1,7 @@
-FROM node:8
-RUN npm install node
-CMD node index.js 
+FROM node:lts-alpine
+
+COPY index.js /root/
+
+RUN npm install express mysql
+
+CMD node root/index.js
