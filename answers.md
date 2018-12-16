@@ -7,12 +7,13 @@ Firstname: Arthur
 command: $ sudo docker build .
 
 ## 2.3
-question:
-command:
+question: The port are closed on docker side thus the application can't connect. We need to put EXPOSE 3000 and EXPOSE 3306 to the dockerfile.
+command: $ docker run --name api -P app
 
 ## 2.5
-question:
-command:
+question:I cannot push my image because it has to have the same name as the repo (devops-lab) and the local instance of docker has to be connected to the docker hub
+command: $ docker login --username=myusername, then type pwd
+docker tag: $ docker build -t mytag
 
 ## 2.6
 command:
