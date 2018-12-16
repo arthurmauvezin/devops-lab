@@ -4,7 +4,7 @@ Lastname: Quemat
 Firstname: Adrien
 
 ## 2.2
-command: $ docker run -p 49160:8080 -d didiqu/project.js
+command: $ docker run didiqu/project.js
 
 ## 2.3
 question:
