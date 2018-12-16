@@ -4,16 +4,23 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
+const host = process.environment.MYSQL_HOST;
+const login = process.environment.MYSQL_LOGIN;
+const password = process.environment.MYSQL_PASSWORD;
+const database = process.environment.MYSQL_DATABASE;
+const port = process.environment.MYSQL_PORT;
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var db = mysql.createConnection({
-host: "localhost",
-user: "root",
-password: "root",
-database: "project",
-port: "8889"
+host: host,
+user: login,
+password: password,
+database: database,
+port: port
 });
+
 
 app.use(function(req, res, next) {
 if ("key" in req.query) {
