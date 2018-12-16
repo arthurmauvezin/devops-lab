@@ -4,11 +4,11 @@ Lastname: LE
 Firstname: Gioan
 
 ## 2.2
-command:
+command: docker build -t app .
 
 ## 2.3
-question:
-command:
+question: The port doesn't work it need to be oppened 
+command: docker run -p 3000:3000 app
 
 ## 2.5
 question:
