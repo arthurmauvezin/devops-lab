@@ -1,11 +1,4 @@
 version: '3'
 services:
   my-service:
-    image: image_tp
-    ports:
-     - 3000
-    environment:
-	MYSQL_DATABASE: t_database
-	MYSQL_LOGIN: t_login
-	MYSQL_PASSWORD: t_password
-	MYSQL_HOST: t_host
+    image: victormoliner/devops-lab

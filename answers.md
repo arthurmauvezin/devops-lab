@@ -7,35 +7,45 @@ Firstname: Victor
 command: docker run app
 
 ## 2.3
-question:
-command:
+question: Our code doesn't work because the port is not open
+command: docker run -i --expose 3000 app
 
 ## 2.5
-question:
-command:
+question: We have to be login and to use tag to do the push
+command: docker login
+docker tag img victormoliner/devops-lab
+docker push victormoliner/devops-lab
 
 ## 2.6
-command:
+command: docker system prune -a
 
-question:
-command:
+question: we pull the image and then we start the container 
+command: docker create victormoliner/devops_lab
+docker pull victormoliner/devops-lab
 
-command:
+command: docker run --detach r/devops_lab
 
 ## 2.7
-question:
-question:
-command:
+question: "docker ps -a" allows to know the status of containers created
+question: Name of the container is relaxed_mclean
+command: docker ps -a
 
-command:
+command: docker rename relaxed_mclean image_lab
 
 ## 2.8
-question:
+question: the OS from the container is Alpine Linux
 output:
+3.8.1
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.8.1
+PRETTY_NAME="Alpine Linux v3.8"
+HOME_URL="http://alpinelinux.org"
+BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
-command:
+command: docker-compose up
 
 ## 3.4
-command:
-command:
+command: docker-compose up -d
+command: docker-compose logs
