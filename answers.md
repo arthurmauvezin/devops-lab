@@ -7,15 +7,15 @@ Firstname: Numa
 command: docker run app . 
 
 ## 2.3
-question:
-command:
+question:because 
+command: docker run -p 8080:8080 
 
 ## 2.4
 question: connection values to database, we specify the of the port, db,login,password,host for the connection to the database.
 command:docker run -e MYSQL_HOST='localhost' -e MYSQL_PORT='8080' -e MYSQL_DATABASE='project' -e MYSQL_LOGIN='root' -e MYSQL_PASSWORD='root' app 
 
 ## 2.5
-question:
+question: we push the image and we create a docker repository
 command:docker push numareplandy/devops-lab:tag1
 
 ## 2.6
