@@ -32,6 +32,7 @@ question: "sudo docker ps -a" get the containers.
 
 question: 
 
+
 command: sudo docker ps -a
 
 command:  sudo docker start -d --name rest_api Charles-le-bg-du-91/devops_lab 
