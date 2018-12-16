@@ -1,14 +1,14 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname:Rognon
+Firstname:Gautier
 
 ## 2.2
-command:
+command:docker run app
 
 ## 2.3
-question:
-command:
+question:the reason why we can't acces is because the port are not opened yet.
+command:docker run -p 3000:3000 index.js
 
 ## 2.5
 question:
