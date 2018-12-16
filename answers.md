@@ -32,12 +32,17 @@ command: $ docker ps -a
 command: docker run --name dev_api --detach Alaureau/devops-lab:dev
 
 ## 2.8
-question:
-output:
+question: To see the current running OS in my Docker container I added option -i and -t command: $ docker run -it api sh
+output:  
+NAME="Alpine Linux" ID=alpine 
+VERSION_ID=3.8.1 
+PRETTY_NAME="Alpine Linux v3.8" 
+HOME_URL="http://alpinelinux.org" 
+BUG_REPORT_URL="http://bugs.alpinelinux.org"
 
 ## 3.1
-command:
+command: $ docker-compose up
 
 ## 3.4
-command:
-command:
+command: $ docker-compose up -d
+command: $ docker-compose logs
