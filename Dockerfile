@@ -1,12 +1,7 @@
-FROM node:8
+FROM node
 
-WORKDIR /usr/src/app
+COPY index.js
 
-COPY package*.json ./
+RUN npm install express mysql
 
-RUN npm install
-
-COPY . .
-
-EXPOSE 8080
-CMD [ "npm", "start" ]
+CMD node index.js
