@@ -1,6 +1,6 @@
 #FROM node:8.11.4-alpine
-
-FROM alpine:latest
+FROM node:alpine
+#FROM alpine:latest
 WORKDIR /app
 
 #RUN apt-get update
