@@ -1,0 +1,12 @@
+version: '3'
+services:
+  my-service: 
+    image: sagake/devops-lab
+    ports:
+      - 3000
+      - 8080
+    environment:
+      MYSQL_HOST: app_host
+      MYSQL_DATABASE: app_database
+      MYSQL_LOGIN: app_login
+      MYSQL_PASSWORD: app_password
