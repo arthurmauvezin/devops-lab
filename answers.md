@@ -4,15 +4,17 @@ Lastname: Zaafouri
 Firstname: Rim
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
-question:
-command:
+question: The call fails because the port is not open to access the service
+command: docker run -i --expose:3000 app
+
 
 ## 2.5
 question:
-command:
+command: docker login
+docker tag app Desktop/devops-lab
 
 ## 2.6
 command:
