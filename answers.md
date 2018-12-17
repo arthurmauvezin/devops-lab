@@ -25,9 +25,9 @@ command: docker pull priscilledh/devops-lab
 command: docker create priscilledh/devops-lab
 
 ## 2.7
+question: get container list and check the container 
 question:
-question:
-command:
+command: docker ps-a (commande à utiliser et utiliser son nom) 
 
 command:
 
