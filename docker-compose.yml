@@ -1,0 +1,12 @@
+version: '3'
+services:
+  my-service:
+    ports:
+      - "3000:3000"
+    environment:
+      - MYSQL_HOST=localhost
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=
+      - MYSQL_DATABSE=project
+      - MYSQL_PORT=3306
+    image: zidv/devops_lab:app 
