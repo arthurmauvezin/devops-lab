@@ -1,24 +1,29 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: Bolland
+Firstname: Coline
 
 ## 2.2
-command:
+command: docker run coline
 
 ## 2.3
 question:
-command:
+command: 
+docker run -it -p 3000:3000 coline (dans powershell)
+EXPOSE 3000  (dans dockerfile)
 
 ## 2.5
 question:
-command:
+command: docker login --username=colinebolland
+docker push colinebolland/devops-lab
 
 ## 2.6
-command:
+command: docker stop $(docker ps -a -q)
+	docker rm $(docker ps -a -q)
+	docker rmi -f $(docker images -a -q)
 
 question:
-command:
+
 
 command:
 
