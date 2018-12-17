@@ -4,7 +4,7 @@ Lastname:Dhuicque
 Firstname:Priscille
 
 ## 2.2
-command:
+command:docker run app 
 
 ## 2.3
 question:
