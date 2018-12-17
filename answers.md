@@ -31,7 +31,7 @@ command: docker ps
 command: docker rename first_container app
 
 ## 2.8
-question: The name of the OS of our container is : Alpine Linux
+question: The name of the container is Alpine Linux
 output: NAME="Alpine Linux"
 ID=alpine
 VERSION_ID=3.8.1
