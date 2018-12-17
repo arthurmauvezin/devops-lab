@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var db = mysql.createConnection({
 	host: "localhost" ,
 	user: "root" ,
-	password: "" ,
+	password: "root" ,
 	database: "project" ,
 	port: "3306"
 });
@@ -40,7 +40,7 @@ app.use( function (req, res, next) {
 
 app.listen(3000, function() {
     db.connect(function(err) {
-    if (err) throw err;
+    //if (err) throw err;
      console.log('Connection to database successful!');
     });
     console.log('Example app listening on port 3000!');
