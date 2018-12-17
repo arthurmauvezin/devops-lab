@@ -27,8 +27,8 @@ question: In order to push, we need first to login
 command: 
 
 sudo docker login
-sudo docker tag app_test2 benzamith/devops_lab
-sudo docker push benzamith/devops_lab
+sudo docker tag app_test2 benzam/devops_lab
+sudo docker push benzam/devops_lab
 
 
 
@@ -38,12 +38,12 @@ command: sudo docker system prune -a
 
 question:
 first, we pull the image:
-sudo docker pull benzamith/devops_lab
+sudo docker pull benzam/devops_lab
 
 Then, create a container:
-sudo docker create benzamith/devops_lab
+sudo docker create benzam/devops_lab
 
-command: sudo docker run benzamith/devops_lab
+command: sudo docker run benzam/devops_lab
 
 
 
@@ -53,13 +53,13 @@ we get a list with information of the container.
 question:
 command:sudo docker ps -a
 
-command:docker start -d --name api benzamith/devops_lab
+command:docker start -d --name api benzam/devops_lab
 
 
 
 
 ## 2.8 Go inside
-question: docker run -it benzamith/devops_lab /bin/bash
+question: docker run -it benzam/devops_lab /bin/bash
 output:
 PRETTY_NAME="Debian GNU/Linux 9 (stretch)"
 NAME="Debian GNU/Linux"
