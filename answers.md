@@ -7,8 +7,8 @@ Firstname:Priscille
 command:docker run app 
 
 ## 2.3
-question:
-command:
+question:not working because the port is not open
+command:docker run -i --expose 3000 app
 
 ## 2.5
 question:
