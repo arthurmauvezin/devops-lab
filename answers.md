@@ -17,12 +17,12 @@ docker tag img priscilledh/devops-lab
 docker push priscilledh/devops-lab
 
 ## 2.6
-command:
+command: docker system prune -a (remove unused data)
 
-question:
-command:
+question: to push and then start a container 
+command: docker pull priscilledh/devops-lab
 
-command:
+command: docker create priscilledh/devops-lab
 
 ## 2.7
 question:
