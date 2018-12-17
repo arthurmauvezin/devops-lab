@@ -10,7 +10,7 @@ var db = mysql.createConnection({
 	user: "root",
 	password: "root",
 	database: "zoo",
-	port: "8889"
+	port: "3306"
 });
 
 
