@@ -4,38 +4,38 @@ Lastname: Ranarison
 Firstname: Meva
 
 ## 2.2
-command:
+command: sudo docker run app labmeva
 
 ## 2.3
-question:
-command:
+question: on ne peut pas accéder car le port n'est pas ouvert
+command: sudo docker run -i --expose:3000 labmeva
 
 ## 2.5
-question:
-command:
+question: Docker ne push pas l'image mais le tag, il faut donc changer le nom de notre image
+command: sudo docker login - sudo docker tag labmeva mevaa13/devops-lab - sudo docker push mevaa13/devops-lab
 
 ## 2.6
-command:
+command: docker system prune -a
 
 question:
-command:
+command: sudo docker pull mevaa13/devops-lab - sudo docker create mevaa13/devops-lab
 
-command:
+command: sudo docker run --detach mevaa13/devops-lab
 
 ## 2.7
+question: 
 question:
-question:
-command:
+command: sudo docker ps -a
 
-command:
+command: docker start -d --name api mevaa13/devops-lab
 
 ## 2.8
-question:
+question: on peut utiliser la commande : sudo docker run -it mevaa13/devops-lab /bin/bash
 output:
 
 ## 3.1
-command:
+command: sudo docker-compose up
 
 ## 3.4
-command:
-command:
+command: sudo docker-compose up -d 
+command: sudo docker-compose logs
