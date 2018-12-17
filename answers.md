@@ -4,23 +4,23 @@ Lastname:Guillot
 Firstname:Nicolas
 
 ## 2.2
-command:
+command:sudo docker run testapp
 
 ## 2.3
 question:
-command:
+command:sudo docker run -i --expose:3000 testapp
 
 ## 2.5
-question:
-command:
+
+sudo docker login
+sudo docker tag testapp PapaFouras/devops_lab
+sudo docker push PapaFouras/devops_lab
 
 ## 2.6
-command:
-
-question:
-command:
-
-command:
+command: sudo docker system prune -a
+sudo docker pull PapaFouras/devops_lab
+sudo docker create PapaFouras/devops_lab
+sudo docker run PapaFouras/devops_lab
 
 ## 2.7
 question:
