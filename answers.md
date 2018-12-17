@@ -51,4 +51,4 @@ command: docker-compose up
 
 ## 3.4
 command:docker-compose up -d
-command:docker-compose logs
+command:docker-compose log

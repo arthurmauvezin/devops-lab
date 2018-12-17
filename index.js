@@ -6,11 +6,11 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 
 var database = mysql.createConnection({
-    host : "localhost",
-    user : "root",
-    password : "",
-    database : "project",
-    port : "3306"
+    host : process.env.MYSQL_HOST,
+    user : process.env.MYSQL_USER,
+    password : process.env.MYSQL_PASSWORD,
+    database : process.env.MYSQL_DATABASE,
+    port : process.env.MYSQL_PORT
 });
 
 //Use Firewall
@@ -969,4 +969,4 @@ app.listen(3000, function(){
         console.log('Connexion Successful');
     });
     console.log('App listening on port 3000');
-});
+})
