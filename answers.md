@@ -1,7 +1,7 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: LEMGADAR
+Firstname: Nohame
 
 ## 2.2
 command:
