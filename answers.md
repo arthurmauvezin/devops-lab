@@ -34,6 +34,7 @@ sudo docker push benzam/devops_lab
 
 
 
+
 ## 2.6 Let's Run it
 command: sudo docker system prune -a
 
