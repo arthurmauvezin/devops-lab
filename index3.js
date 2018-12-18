@@ -6,11 +6,11 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var db = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "root",
-	database: "zoo",
-	port: "3307"
+	host: process.env.MYSQL_HOST,
+	user: proces.nv.MYSQL_LOGIN,
+	password: process.env.MYSQL_PASSWORD,
+	database: process.env.MYSQL_DATABASE,
+	port: process.env.MYSQL_PORT
 });
 
 
