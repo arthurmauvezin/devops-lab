@@ -1,0 +1,16 @@
+version: '3'
+services:
+  my-service:
+
+    ports:
+      - "3000:3000"
+
+    environment:
+      - MYSQL_HOST=localhost
+      - MYSQL_LOGIN=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=zoo
+      - MYSQL_PORT=3307
+
+    image: hogun/devops-lab
+    
