@@ -25,8 +25,8 @@ command: sudo docker create hogun/devops-lab
 command: sudo docker run --detach hogun/devops-lab
 
 ## 2.7
-question:   (goofy_zhukovsky)
-question: rename file to api_web_js
+question: Nom du fichier actuel : goofy_zhukovsky
+question: On renomme le fichier avec le nom : api_web_js
 
 command: sudo docker ps -a
 command: sudo docker rename goofy_zhukovsky api_web_js
