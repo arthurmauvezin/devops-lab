@@ -4,18 +4,20 @@ Lastname: AUBARET
 Firstname: Auriane
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
-question:
-command:
+question: 
+command: docker run -i --expose 3000 app
 
 ## 2.5
 question:
-command:
+command: docker login
+docker tag img aurianeaubaret/devops-lab
+docker push aurianeaubaret/devops-lab
 
 ## 2.6
-command:
+command: docker system prune -a
 
 question:
 command:
