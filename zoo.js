@@ -5,11 +5,11 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const mhost = process.environment.MYQL_HOST;
-const mport = process.environment.MYQL_PORT;
-const mdatabase = process.environment.MYQL_DATABASE;
-const muser = process.environment.MYQL_LOGIN;
-const mpassword = process.environment.MYQL_PASSORD;
+host = process.env.MYQL_HOST;
+port = process.env.MYQL_PORT;
+database = process.env.MYQL_DATABASE;
+user = process.env.MYQL_LOGIN;
+password = process.env.MYQL_PASSORD;
 
 
 /***********************************
