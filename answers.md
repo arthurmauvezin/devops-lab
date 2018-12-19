@@ -10,23 +10,17 @@ command:sudo docker run -i --expose:PortNumber test
 
 ## 2.5
 question: reconstruction de l'image 
-command: docker tag 61789455a924  sk11199/devops-lab
-docker push sk11199/devops_lab
-
+command: 
 ## 2.6
-command: sudo docker system prune -a
-
+command: 
 question: 
-command:docker run sk11199/devops-lab:test
-
-command: sudo docker create sk11199/devops-lab
-
+command:
+command: 
 ## 2.7
 question:
 question:
-command: sudo docker ps -a
-
-command: docker ps -a
+command: 
+command:
 
 ## 2.8
 question:
