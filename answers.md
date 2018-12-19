@@ -5,11 +5,11 @@ Firstname: Skander
 ## 2.2
 command:sudo docker run test
 ## 2.3
-question:port fermé,il faut en ouvrir un 
-command:sudo docker run -i --expose:PortNumber test 
+question: port fermé,il faut en ouvrir un 
+command: sudo docker run -i --expose:PortNumber test 
 
 ## 2.5
-question: reconstruction de l'image 
+question: 
 command: 
 ## 2.6
 command: 
