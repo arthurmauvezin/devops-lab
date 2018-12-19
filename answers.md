@@ -7,7 +7,7 @@ Firstname: Benjamin
 command: docker run bblondeau/zoo
 
 ## 2.3
-question: L'appel echoue car le port 3000 n'est pas ouvert.
+question: L'appel echoue car le port 3000 n'est pas ouvert .
 command: docker run -i --expose 3000 bblondeau/zoo
 
 ## 2.5
