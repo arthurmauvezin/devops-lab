@@ -11,4 +11,4 @@ services:
       - MYSQL_DATABSE=project
       - MYSQL_PORT=3306
 
-image:
+    image: colinebolland/devops-lab
