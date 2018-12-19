@@ -2,3 +2,10 @@ version: '3'
 services:
   my-service:
     image: matthieucdv/devops_lab
+    ports:
+      - 3000
+    environment: 
+      - MYSQL_HOST=localhost
+      - MYSQL_LOGIN=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_DATABASE=zoo

@@ -11,11 +11,11 @@ const app = express();
 const
 app.use(bodyParser.urlencoded({extended:true}));
 
-const mhost = process.environment.MYQL_HOST;
-const mport = process.environment.MYQL_PORT;
-const mdatabase = process.environment.MYQL_DATABASE;
-const muser = process.environment.MYQL_LOGIN;
-const mpassword = process.environment.MYQL_PASSORD;
+const mhost = process.environment.MYSQL_HOST;
+const mport = process.environment.MYSQL_PORT;
+const mdatabase = process.environment.MYSQL_DATABASE;
+const muser = process.environment.MYSQL_LOGIN;
+const mpassword = process.environment.MYSQL_PASSORD;
 
 //Paramètres de connexion à la base de données
 var db = mysql.createConnection({

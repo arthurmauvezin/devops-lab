@@ -1,5 +1,5 @@
 FROM node:8.14.0-alpine
-copy ./root
+COPY devops-lab/index.js /root/
 RUN npm install express mysql
 CMD node /root/index.js  
 EXPOSE 3010                       

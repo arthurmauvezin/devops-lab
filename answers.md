@@ -11,7 +11,7 @@ question: L'accès au service n'est pas possible car le port n'est pas ouvert. P
 command: sudo docker run -p 3000:3000 app
 
 ## 2.5
-question: Pour pouvoir "push" notre image Docker sur Docker Hub, celle-ci doit avoir le même nom (tag) que le répertoire. Dans un premier temps, on s'identifie, puis on renomme l'image Docker, et enfin on "push" l'image sur Docker Hub (voir les commandes ci-dessous).
+question: Pour pouvoir "push" notre image Docker sur Docker Hub, celle-ci doit avoir le même nom (tag) que le répertoire. Dans un premier temps, on s'identifie, puis on renomme l'image Docker, et enfin on "push" l'image sur Docker Hub (voir les commandes ci-dessous):
 command: sudo docker login 
 command: sudo docker tag app matthieucdv/devops_lab
 command: sudo docker push matthieucdv/devops_lab
@@ -25,8 +25,8 @@ command: sudo docker create matthieucdv/devops_lab
 command: sudo docker run --detach matthieucdv/devops_lab
 
 ## 2.7
-question: Afin de récupérer les informations relatives à tous les conteneurs (id, nom, status et datede création), on exécute la commande "sudo docker ps -a" (qui liste ces derniers). On peut voir que le conteneur a un status "up". 
-question: Le conteneur a pour nom boring_varahmihira
+question: Afin de récupérer les informations relatives à tous les conteneurs (id, nom, status et date de création), on exécute la commande "sudo docker ps -a" (qui liste ces derniers). On peut voir que le conteneur a un status "up". 
+question: Le conteneur a pour nom boring_varahmihira. On le renomme ensuite service_web. On effectue ces étapes avec les commandes suivantes:
 command: sudo docker ps -a
 command: sudo docker rename boring_varahmihira service_web
 
