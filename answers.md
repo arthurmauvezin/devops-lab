@@ -13,8 +13,8 @@ question: Our code doesn't work because the port is not open
 command: docker run -p -3000:3000 -td app
 
 ## 2.5
-question: We have to be login and to use tag to do the push
-command: docker login
+question: We have to change the tag to do the push
+command: 
 docker tag img victormoliner/devops-lab
 docker push victormoliner/devops-lab
 
@@ -23,10 +23,8 @@ command: docker system prune -a
 
 question:
 command:  
-docker create victormoliner/devops-lab
-docker pull victormoliner/devops-lab
 
-command: cker run --detach victormoliner/devops-lab
+command: 
 
 ## 2.7
 question: We see the status of containers created
@@ -36,7 +34,7 @@ command: docker ps -a
 command: docker rename relaxed_mclean image_lab
 
 ## 2.8
-question: the OS from the container is Alpine Linux 
+question: the OS is Alpine Linux 
 output:
 3.8.1
 NAME="Alpine Linux"
