@@ -30,7 +30,7 @@ question:La commande pour voir les processus en cours dans docker est `sudo dock
 question: 
 command: sudo docker ps -a
 
-command:
+command: sudo docker rename
 
 ## 2.8
 question:
