@@ -4,10 +4,9 @@ Lastname: BAHRI
 Firstname: Skander
 ## 2.2
 command: docker build -t app .
-sudo docker run test
 ## 2.3
 question: 
-command: 
+command: sudo docker run test
 
 ## 2.5
 question: 
