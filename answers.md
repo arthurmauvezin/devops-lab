@@ -8,7 +8,7 @@ command: docker run app
 
 ## 2.3
 question: Par ce qu'il faut que le port 3000 soit ouvert
-command:
+command:ducker -i app
 
 ## 2.5
 question:
