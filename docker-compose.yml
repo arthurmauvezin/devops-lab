@@ -1,0 +1,4 @@
+version: '3'
+services:
+  my-service:
+    image: yudada31/devops_lab
