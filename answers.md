@@ -12,8 +12,7 @@ command: sudo docker run -p 3000:3000 -td bblondeau/zoo
 
 ## 2.5
 question: L'image ne peut pas être "pushed". En effet, on doit changer le tag pour cela.
-command: docker login
-docker tag img benjamin1234/devops-lab
+command: docker tag img benjamin1234/devops-lab
 docker push benjamin1234/devops-lab
 
 ## 2.6
