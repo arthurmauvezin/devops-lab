@@ -8,7 +8,7 @@ command: docker run bblondeau/zoo
 
 ## 2.3
 question: L'appel échoue car le port 3000 n'est pas ouvert. Il est donc nécessaire de redémarrer le container en ouvrant le port adéquat (3000) que l'on connecte avec le port (3000) de notre machine.
-command: sudo docker run -p 3000:3000 bblondeau/zoo
+command: docker run -p 3000:3000 bblondeau/zoo
 
 ## 2.5
 question: L'image ne peut pas être "pushed". En effet, on doit changer le tag : <username>/<repositoryname>, dans mon cas benjamin123/devops-lab.
