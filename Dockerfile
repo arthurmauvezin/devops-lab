@@ -1,6 +1,7 @@
-FROM node:8.14.0-alpine
-
-COPY . /root
-RUN npm install express mysql
-CMD node /root/index.js
-EXPOSE  3000
+FROM node:8
+COPY package-lock.json ./
+COPY index.js ./
+RUN npm install express
+RUN npm install mysql
+CMD ["node","index.js"]
+EXPOSE 3000

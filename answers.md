@@ -4,10 +4,10 @@ Lastname: LEMGADAR
 Firstname: Nohame
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
-question:
+question: Par ce qu'il faut que le port 3000 soit ouvert
 command:
 
 ## 2.5
