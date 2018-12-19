@@ -4,23 +4,23 @@ Lastname: Zmerli
 Firstname: Ismail
 
 ## 2.2
-command:
+command: docker build -t app
 
 ## 2.3
-question:
-command:
+question: We need to open the appropriate port to listen our incoming requests.
+command: EXPOSE 3000
 
 ## 2.5
-question:
-command:
+question: The image cannot be pushed at first. We need to set up the login first.
+command: docker login docker tag app ismazmerli/devops-lab docker push ismazmerli/devops-lab
 
 ## 2.6
-command:
+command: docker system prune -a
 
-question:
-command:
+question:The previous command deletes all images. then We can pull the image we added and finally run it.
+command:docker pull ismazmerli/devops-lab
 
-command:
+command:docker run -d ismazmerli/devops-lab
 
 ## 2.7
 question:
