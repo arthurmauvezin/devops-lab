@@ -7,23 +7,23 @@ Firstname: Benjamin
 command: docker run bblondeau/zoo
 
 ## 2.3
-question: L'appel echoue car le port 3000 n'est pas ouvert.
-command: docker run -i --expose 3000 bblondeau/zoo
+question: L'appel echoue car le port 3000 n'est pas ouvert. Il est donc nécessaire de redémarrer le container en ouvrant le port adéquat.
+command: sudo docker run -p 3000:3000 -td bblondeau/zoo
 
 ## 2.5
-question: L'image ne peut pas être "pushed". En effet, il faut être connecté et utiliser "tag" pour que le push puisse être effectué.
+question: L'image ne peut pas être "pushed". En effet, on doit changer le tag pour cela.
 command: docker login
-docker tag img benjamin4321/devops-lab
-docker push benjamin4321/devops-lab
+docker tag img benjamin1234/devops-lab
+docker push benjamin1234/devops-lab
 
 ## 2.6
-command: docker system prune -a
+command: sudo docker system prune -a
 
-question: On supprime les images créées depuis le début et on redémarre le container.
-command: docker create benjamin4321/devops-lab
-docker pull benjamin4321/devops-lab
+question: On "pull" l'image créée et on redémarre le container.
+command: sudo docker pull benjamin1234/devops-lab
 
-command: docker run --detach benjamin4321/devops-lab
+command: sudo docker create benjamin1234/devops-lab
+sudo docker run --detach benjamin1234/devops-lab
 
 ## 2.7
 question:
