@@ -29,7 +29,9 @@ command: docker start -d --name api julienarzel/devops-lab     docker rename tes
 
 
 ## 2.8
-question: We first use the command "docker run -it raphlopes/devops-lab /bin/bash" to enter interactive mode, and then the given command "cat /etc/*release"
+question: 
+We first use the following command to enter interactive mode : docker run -it julienarzel/devops-lab /bin/bash   
+And then the given command : cat /etc/*release
 
 output: 
 
