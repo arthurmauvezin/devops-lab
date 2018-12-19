@@ -7,11 +7,11 @@ const app = express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const Thost = process.environment.MYSQL_HOST;
-const Tport = process.environment.MYSQL_PORT;
-const Tdatabase = process.environment.MYSQL_DATABASE;
-const Tuser = process.environment.MYSQL_LOGIN;
-const Tpassword = process.environment.MYSQL_PASSWORD;
+const Thost = process.env.MYSQL_HOST;
+const Tport = process.env.MYSQL_PORT;
+const Tdatabase = process.env.MYSQL_DATABASE;
+const Tuser = process.env.MYSQL_LOGIN;
+const Tpassword = process.env.MYSQL_PASSWORD;
 
 var db = mysql.createConnection({
 	host:Thost,
@@ -22,7 +22,7 @@ var db = mysql.createConnection({
 });
 
 
-app.use(function(req, res, next) {
+/*app.use(function(req, res, next) {
 	if ("key" in req.query) { // if there is a key in the request we try to find it in the table if there is no key or the key is not in the table we send the error 403
 		var key = req.query["key"]; 
 		var query = "SELECT * FROM users WHERE apikey='" + key + "'";
@@ -38,7 +38,7 @@ app.use(function(req, res, next) {
 	} else {
 		res.status(403).send("access denied").end();
 	}
-});
+});*/
 
 
 
