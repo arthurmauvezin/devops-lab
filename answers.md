@@ -1,32 +1,32 @@
 # Answers
 
-Lastname:
-Firstname:
-
+Lastname: BAHRI
+Firstname: Skander
 ## 2.2
-command:
-
+command: docker build -t app .
 ## 2.3
-question:
-command:
+question: 
+command: sudo docker run test
 
 ## 2.5
-question:
-command:
+question: 
 
+command: 
 ## 2.6
 command:
-
+ 
 question:
+ 
 command:
 
-command:
-
+command: 
 ## 2.7
 question:
-question:
-command:
 
+question:
+
+command:
+ 
 command:
 
 ## 2.8
