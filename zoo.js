@@ -5,18 +5,15 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var db = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "root",
-	database: "zoo",
-	port: "8889"
-});
-
+const mhost = process.environment.MYQL_HOST;
+const mport = process.environment.MYQL_PORT;
+const mdatabase = process.environment.MYQL_DATABASE;
+const muser = process.environment.MYQL_LOGIN;
+const mpassword = process.environment.MYQL_PASSORD;
 
 
 /***********************************
-FIRWALL
+FIREWALL
 ************************************/
 
 app.use(function(req, res, next) {
