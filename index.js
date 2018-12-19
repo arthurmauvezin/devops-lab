@@ -1,16 +1,23 @@
+const host = process.environment.MYSQL_HOST;
+const port = process.environment.MYSQL_PORT;
+const database = process.environment.MYSQL_DATABASE;
+const login = process.environment.MYSQL_LOGIN;
+const password = process.environment.MYSQL_PASSWORD;
+
 const express = require ( 'express' );
 const mysql = require ( 'mysql' );
 const bodyParser = require ( 'body-parser' );
 const app = express();
+
 app.use(bodyParser.urlencoded({ extended: true }));
 var db = mysql.createConnection({
-    host: "localhost" ,
-    user: "root" ,
-    password: "root" ,
-    database: "zoo"
+    host: "host" ,
+    user: "login" ,
+    password: "password" ,
+    database: "database"
 });
 
-//Firewall 
+//Firewall
 app.use( function (req, res, next) {
     if ( "key" in req.query) {
         var key = req.query[ "key" ];
@@ -29,13 +36,13 @@ app.use( function (req, res, next) {
     }
     });
 
-// Animals 
+// Animals
 
     //Read
 app.get( '/animals' , function (req, res) {
     var query = "SELECT * FROM animals" ;
-    
-        //Filtre par champs        
+
+        //Filtre par champs
     if ( "fields" in req.query) {
         query = query.replace( "*" , req.query[ "fields" ]);
     }
@@ -53,7 +60,7 @@ app.get( '/animals' , function (req, res) {
             req.query[conditions[index]] + "'" ;
         }
     }
-    
+
         //Filtre d'ordre
     if ( "sort" in req.query) {
         var sort = req.query[ "sort" ].split( "," );
@@ -97,7 +104,7 @@ app.get( '/animals/:id' , function (req, res) {
 app.get( '/animals/:id/food' , function (req, res) {
     var id = req.params.id;
     var query = "SELECT food.* FROM animals INNER JOIN food ON animals.id = food.id_animal WHERE animals.id=" + id;
-    //Filtre par champs        
+    //Filtre par champs
     if ( "fields" in req.query) {
         query = query.replace( "*" , req.query[ "fields" ]);
     }
@@ -115,7 +122,7 @@ app.get( '/animals/:id/food' , function (req, res) {
             req.query[conditions[index]] + "'" ;
         }
     }
-    
+
         //Filtre d'ordre
     if ( "sort" in req.query) {
         var sort = req.query[ "sort" ].split( "," );
@@ -147,7 +154,7 @@ app.get( '/animals/:id/food' , function (req, res) {
 app.get( '/animals/:id/cages' , function (req, res) {
     var id = req.params.id;
     var query = "SELECT cages.* FROM animals INNER JOIN cages ON animals.id_cage = cages.id WHERE animals.id=" + id;
-    //Filtre par champs        
+    //Filtre par champs
     if ( "fields" in req.query) {
         query = query.replace( "*" , req.query[ "fields" ]);
     }
@@ -165,7 +172,7 @@ app.get( '/animals/:id/cages' , function (req, res) {
             req.query[conditions[index]] + "'" ;
         }
     }
-    
+
         //Filtre d'ordre
     if ( "sort" in req.query) {
         var sort = req.query[ "sort" ].split( "," );
@@ -198,7 +205,7 @@ app.get( '/animals/:id/cages/:id_bis' , function (req, res) {
     var id = req.params.id;
     var id_bis = req.params.id_bis;
     var query = "SELECT cages.* FROM animals INNER JOIN cages ON animals.id_cage = cages.id WHERE animals.id=" + id + " AND cages.id="+id_bis;
-    //Filtre par champs        
+    //Filtre par champs
     if ( "fields" in req.query) {
         query = query.replace( "*" , req.query[ "fields" ]);
     }
@@ -216,7 +223,7 @@ app.get( '/animals/:id/cages/:id_bis' , function (req, res) {
             req.query[conditions[index]] + "'" ;
         }
     }
-    
+
         //Filtre d'ordre
     if ( "sort" in req.query) {
         var sort = req.query[ "sort" ].split( "," );
@@ -307,12 +314,12 @@ app.delete( '/animals/:id' , function (req, res) {
     //Read
 app.get( '/cages' , function (req, res) {
     var query = "SELECT * FROM cages" ;
-    
+
         //Filtre par champs
     if ( "fields" in req.query) {
         query = query.replace( "*" , req.query[ "fields" ]);
     }
-        //Filtre par conditions 
+        //Filtre par conditions
     var conditions = [ "name" , "description", "area" ];
     for ( var index in conditions) {
         if (conditions[index] in req.query) {
@@ -367,7 +374,7 @@ app.get( '/cages/:id' , function (req, res) {
 app.get( '/cages/:id/animals' , function (req, res) {
     var id = req.params.id;
     var query = "SELECT animals.* FROM cages INNER JOIN animals ON cages.id = animals.id_cage WHERE cages.id=" + id;
-    //Filtre par champs        
+    //Filtre par champs
     if ( "fields" in req.query) {
         query = query.replace( "*" , req.query[ "fields" ]);
     }
@@ -385,7 +392,7 @@ app.get( '/cages/:id/animals' , function (req, res) {
             req.query[conditions[index]] + "'" ;
         }
     }
-    
+
         //Filtre d'ordre
     if ( "sort" in req.query) {
         var sort = req.query[ "sort" ].split( "," );
@@ -478,7 +485,7 @@ app.get( '/food' , function (req, res) {
     if ( "fields" in req.query) {
         query = query.replace( "*" , req.query[ "fields" ]);
     }
-        //Filtre par conditions 
+        //Filtre par conditions
     var conditions = [ "name" , "id_animal", "quantity" ];
     for ( var index in conditions) {
         if (conditions[index] in req.query) {
@@ -533,7 +540,7 @@ app.get( '/food/:id' , function (req, res) {
 app.get( '/food/:id/animals' , function (req, res) {
     var id = req.params.id;
     var query = "SELECT animals.* FROM food INNER JOIN animals ON food.id_animal = animals.id WHERE food.id=" + id;
-    //Filtre par champs        
+    //Filtre par champs
     if ( "fields" in req.query) {
         query = query.replace( "*" , req.query[ "fields" ]);
     }
@@ -551,7 +558,7 @@ app.get( '/food/:id/animals' , function (req, res) {
             req.query[conditions[index]] + "'" ;
         }
     }
-    
+
         //Filtre d'ordre
     if ( "sort" in req.query) {
         var sort = req.query[ "sort" ].split( "," );
@@ -585,7 +592,7 @@ app.get( '/food/:id/animals/:id_bis' , function (req, res) {
     var id = req.params.id;
     var id_bis = req.params.id_bis;
     var query = "SELECT animals.* FROM food INNER JOIN animals ON food.id_animal = animals.id WHERE food.id=" + id + " AND animals.id=" + id_bis;
-    //Filtre par champs        
+    //Filtre par champs
     if ( "fields" in req.query) {
         query = query.replace( "*" , req.query[ "fields" ]);
     }
@@ -603,7 +610,7 @@ app.get( '/food/:id/animals/:id_bis' , function (req, res) {
             req.query[conditions[index]] + "'" ;
         }
     }
-    
+
         //Filtre d'ordre
     if ( "sort" in req.query) {
         var sort = req.query[ "sort" ].split( "," );
@@ -694,7 +701,7 @@ app.get( '/staff' , function (req, res) {
     if ( "fields" in req.query) {
         query = query.replace( "*" , req.query[ "fields" ]);
     }
-        //Filtre par conditions 
+        //Filtre par conditions
     var conditions = [ "firstname" , "lastname", "wage" ];
     for ( var index in conditions) {
         if (conditions[index] in req.query) {
