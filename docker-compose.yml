@@ -1,0 +1,12 @@
+version: '3'
+services:
+  my-service:
+    image: myapp
+    ports:
+    - "3000:3000"
+    environment:
+    - MYSQL_HOST='localhost'
+    - MYSQL_PORT='3306'
+    - MYSQL_DATABASE='zoo'
+    - MYSQL_USER='root'
+    - MYSQL_PASSWORD=''
