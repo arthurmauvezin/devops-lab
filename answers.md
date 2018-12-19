@@ -1,14 +1,14 @@
 # Answers
 
-Lastname:
-Firstname:
+Lastname: LEMGADAR
+Firstname: Nohame
 
 ## 2.2
-command:
+command: docker run app
 
 ## 2.3
-question:
-command:
+question: Par ce qu'il faut que le port 3000 soit ouvert
+command:ducker -i app
 
 ## 2.5
 question:
