@@ -1,0 +1,11 @@
+version: '3'
+services:
+  my-service:
+    image: labdocker
+     ports:
+      - 3000   
+    environment:
+      MYSQL_DATABASE: mdb
+      MYSQL_LOGIN: mlogin
+      MYSQL_PASSWORD: mpassword
+      MYSQL_HOST: mhost
