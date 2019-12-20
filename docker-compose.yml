@@ -1,0 +1,6 @@
+version: '3'
+services:
+  my-service:
+    ports:
+    - "3000:3000"
+    image: aminecrime/devops-lab
